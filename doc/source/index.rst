@@ -51,6 +51,16 @@ amovlab 文档
    进阶功能-吊舱跟踪 <docs/p600/5-进阶功能-框选跟踪飞行>
    进阶功能-规划避障 <docs/p600/5-进阶功能-规划避障飞行>
 
+   .. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Z410使用手册
+
+   硬件介绍 <docs/Z410/1. Z410-使用教程>
+   软件介绍 <docs/Z410/2. Z410-单目版教程>
+   首次飞行 <docs/Z410/3. Z410-视觉版教程>
+
+
 .. toctree::
    :maxdepth: 2
    :hidden:
@@ -62,6 +72,7 @@ amovlab 文档
    规划模块 <docs/simulation/4-规划模块>
    目标检测模块 <docs/simulation/5-目标检测模块>
 
+   
 
 .. toctree::
    :maxdepth: 2

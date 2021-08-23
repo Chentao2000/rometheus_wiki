@@ -1,0 +1,25 @@
+遥控器校准
+===============
+
+点击校准，然后将油门拨到最低，如下图所示
+
+.. image:: ../../images/baseconfig_for_px4/4-radio-1.png
+
+然后按照界面右方的操作指示拨动摇杆
+
+.. image:: ../../images/baseconfig_for_px4/4-radio-2.png
+
+当全部操作校准完成后，会显示如下界面，此时将油门拨到最低，然后点击下一步。
+
+.. image:: ../../images/baseconfig_for_px4/4-radio-3.png
+
+当连续点击两次下一步后，会有如下界面，就表示此时校准已经完成。
+
+.. image:: ../../images/baseconfig_for_px4/4-radio-4.png
+
+演示视频
+------------------
+
+.. raw:: html
+
+    <iframe width="696" height="422" src="//player.bilibili.com/player.html?aid=971101299&bvid=BV1iU4y1x7Ma&cid=277323116&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>

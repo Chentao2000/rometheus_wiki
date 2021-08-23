@@ -1,0 +1,556 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Z410-4B 单目版教程 &mdash; P系列无人机-wiki 1.0 文档</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> P系列无人机-wiki
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">首页</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.amovlab.com/">阿木实验室</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E.html">免责声明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E5%AE%89%E5%85%A8%E6%8C%87%E5%AF%BC%E6%89%8B%E5%86%8C.html">安全指导手册</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">P450使用手册</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../p450/1-%E7%A1%AC%E4%BB%B6%E4%BB%8B%E7%BB%8D.html">硬件介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/2-%E8%BD%AF%E4%BB%B6%E4%BB%8B%E7%BB%8D.html">软件介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/3-%E9%A6%96%E6%AC%A1%E9%A3%9E%E8%A1%8C.html">首次飞行</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/4-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86md.html">常见问题处理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%86%85%E6%8C%87%E7%82%B9%E9%A3%9E%E8%A1%8C.html">进阶功能-室内指点飞行</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%86%85%E8%87%AA%E4%B8%BB%E8%B7%9F%E8%B8%AA.html">进阶功能-室内自主跟踪</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%86%85%E8%87%AA%E4%B8%BB%E9%99%8D%E8%90%BD.html">进阶功能-室内自主降落</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%86%85%E8%87%AA%E4%B8%BB%E9%81%BF%E9%9A%9C.html">进阶功能-室内自主避障</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%A4%96%E6%8C%87%E7%82%B9%E9%A3%9E%E8%A1%8C.html">进阶功能-室外指点飞行</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%A4%96%E8%87%AA%E4%B8%BB%E9%99%8D%E8%90%BD.html">进阶功能-室外自主降落</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%A4%96%E8%87%AA%E4%B8%BB%E8%B7%9F%E8%B8%AA.html">进阶功能-室外自主跟踪</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%A4%96%E8%87%AA%E4%B8%BB%E9%81%BF%E9%9A%9C.html">进阶功能-室外自主避障</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-fastplanner.html">进阶功能-FastPlanner</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">P600使用手册</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../p600/1-%E7%A1%AC%E4%BB%B6%E4%BB%8B%E7%BB%8D.html">硬件介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p600/2-%E8%BD%AF%E4%BB%B6%E4%BB%8B%E7%BB%8D.html">软件介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p600/3-%E9%A6%96%E6%AC%A1%E9%A3%9E%E8%A1%8C.html">首次飞行</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p600/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%A4%96%E6%8C%87%E7%82%B9%E9%A3%9E%E8%A1%8C.html">进阶功能-室外指点</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p600/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E6%A1%86%E9%80%89%E8%B7%9F%E8%B8%AA%E9%A3%9E%E8%A1%8C.html">进阶功能-吊舱跟踪</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p600/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E8%A7%84%E5%88%92%E9%81%BF%E9%9A%9C%E9%A3%9E%E8%A1%8C.html">进阶功能-规划避障</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">仿真使用手册</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../simulation/1-%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83.html">仿真环境</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../simulation/2-%E9%A3%9E%E8%A1%8C%E6%8E%A7%E5%88%B6%E6%A8%A1%E5%9D%97.html">飞行控制模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../simulation/3-slam%E6%A8%A1%E5%9D%97.html">slam模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../simulation/4-%E8%A7%84%E5%88%92%E6%A8%A1%E5%9D%97.html">规划模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../simulation/5-%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E6%A8%A1%E5%9D%97.html">目标检测模块</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">PX4基础配置</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/1-%E8%BF%9E%E6%8E%A5%E9%A3%9E%E6%8E%A7.html">连接飞控</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/2-%E5%9B%BA%E4%BB%B6%E5%88%B7%E5%86%99.html">固件刷写</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/3-%E6%9C%BA%E6%9E%B6%E9%80%89%E6%8B%A9.html">机架选择</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/4-%E4%BC%A0%E6%84%9F%E5%99%A8%E6%A0%A1%E5%87%86.html">传感器校准</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/5-%E9%81%A5%E6%8E%A7%E5%99%A8%E6%A0%A1%E5%87%86.html">遥控器校准</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/7-%E7%94%B5%E6%B1%A0%E6%A0%A1%E5%87%86.html">电池校准</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/8-%E7%94%B5%E8%B0%83%E6%A0%A1%E5%87%86.html">电调校准</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/9-%E5%B8%B8%E7%94%A8%E5%8F%82%E6%95%B0%E8%AE%BE%E7%BD%AE.html">常用参数设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/10-PID%E8%B0%83%E5%8F%82.html">PID调参</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/11-%E4%BB%BB%E5%8A%A1%E9%A3%9E%E8%A1%8C.html">任务飞行</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">其他</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E5%BC%80%E5%8F%91%E5%9B%A2%E9%98%9F.html">Prometheus团队</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/Prometheus%E5%8E%86%E5%8F%B2.html">Prometheus历史</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/Prometheus%E5%90%88%E4%BD%9C%E4%BC%99%E4%BC%B4%E8%AE%A1%E5%88%92.html">Prometheus合作伙伴计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC.html">联系我们</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E7%A4%BE%E5%8C%BA%E8%AE%BA%E5%9D%9B.html">社区论坛</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E8%87%B4%E8%B0%A2.html">致谢</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">P系列无人机-wiki</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Z410-4B 单目版教程</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/docs/Z410/2. Z410-单目版教程.rst.txt" rel="nofollow"> 查看页面源码</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="z410-4b">
+<h1>Z410-4B 单目版教程<a class="headerlink" href="#z410-4b" title="永久链接至标题">¶</a></h1>
+<p>Z410 单目版在基础版配置上，扩展了树莓派 4B机载电脑。目前该系统集成了数据遥测转发，高清视频回传，ROS，mavros，Dronekit-python
+等。我们需要先配置好网络，通过PC远程连接到树莓派，进而实现对无人机的操作。</p>
+<div class="admonition hint">
+<p class="admonition-title">提示</p>
+<p>这个是提示树莓派能做什么，为什么要扩展树莓派？ 树莓派是一款基于ARM的微型电脑主板，英文名：RaspberryPi。是一款入门及的机载电脑。它能够通过串口连接使用 MAVLink协议与飞控进行通信这可用于执行额外的任务，</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">重要</p>
+<p>例如：通过 python、ROS编程实现对无人机的飞行控制；通过安装单目相机实现图像识别，由于存储图像的内存要求，单靠飞控根本无法完成这些任务。</p>
+</div>
+<p>如何对无人机的树莓派进行操作？</p>
+</div>
+<div class="section" id="id1">
+<h1>1. 建立网络连接：<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>将电池插上 BB响报警器，绑扎在底板上。无人机连接电池插口，即可启动。</p>
+<div class="admonition hint">
+<p class="admonition-title">提示</p>
+<p>启动后先不要挪动无人机，等待飞控和树莓派启动系统，大概2 分钟左右。</p>
+</div>
+<p>系统启动后自动启动 WIFI 热点。 WIFI 名称：ACopter密码：12345678 将笔记本 WIFI 连接到树莓派热点。</p>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>注意：因 WIFI信号范围最大 30 米左右</p>
+</div>
+</div>
+<div class="section" id="id2">
+<h1>2. 使用树莓派遥测转发功能，将无人机与地面站进行连接<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h1>
+<p>树莓派集成了飞控数据遥测转发的功能，相当于一个路由器。这样我们可以通过
+WIFI 网络远程连接飞控和PC 端地面站软件。</p>
+<p>具体操作参考视频 ：</p>
+<iframe width="696" height="422" src="//https://www.bilibili.com/video/BV1EM4y1T7ws?p=1 frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>注意：如果不能通过 UDP 连接，请先关闭 windows 防火墙。</p>
+</div>
+<div class="figure align-default">
+<img alt="../../_images/B.png" src="../../_images/B.png" />
+</div>
+</div>
+<div class="section" id="id3">
+<h1>3. 使用树莓派的图传功能，可实时回传视频到地面站<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h1>
+<p>树莓派集成了高清图传回传功能，可以将 USB摄像头拍摄的实时高清信号图像回传到
+PC端地面站软件、或则图像播放软件，如：VLC media player。</p>
+<p>（下载链接：<a class="reference external" href="https://www.videolan.org/">https://www.videolan.org/</a>）</p>
+<p>MP地面站软件显示高清视频需要先安装 GStreamer，下载链接及教程：</p>
+<p><a class="reference external" href="https://pan.baidu.com/s/1AyvQNj2m4E4fMHS6JYnpJA">https://pan.baidu.com/s/1AyvQNj2m4E4fMHS6JYnpJA</a> 提取码:f7c3</p>
+<p>安装好 GStreamer 以后，视频回传操作参考以下视频：</p>
+<iframe width="696" height="422" src="//https://www.bilibili.com/video/BV1EM4y1T7ws?p=2 frameborder="no" framespacing="0" allowfullscreen="true"> </iframe></div>
+<div class="section" id="pc-3">
+<h1>4. PC 访问树莓派的 3 种方式：<a class="headerlink" href="#pc-3" title="永久链接至标题">¶</a></h1>
+<div class="section" id="windows">
+<h2>方法 1：windows 系统下通过远程桌面访问树莓派：<a class="headerlink" href="#windows" title="永久链接至标题">¶</a></h2>
+<p>4.2.1 打开 windows 远程桌面；</p>
+<p>4.2.2 填入树莓派 IP：10.42.0.10，点 连接；</p>
+<p>4.2.3 在终端输入用户名：ubuntu，密码：123456abc；</p>
+<p>4.2.4 确认后即可连接到树莓派桌面(注意：远程桌面连接占用带宽比较大，速度略有卡顿是正常的。</p>
+<iframe width="696" height="422" src="//https://www.bilibili.com/video/BV1EM4y1T7ws?p=3 frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>方法 1 优点：有桌面系统，直观可看。对初学者来说比较容易接受；</p>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>方法 1 缺点：远程桌面会占用很多资源，导致卡顿；</p>
+</div>
+</div>
+<div class="section" id="windows-putty">
+<h2>方法 2：windows 系统下通过PUTTY 访问树莓派：<a class="headerlink" href="#windows-putty" title="永久链接至标题">¶</a></h2>
+<p>4.2 在 PC 端 安 装 PuTTY， 下 载 链 接:</p>
+<p><a class="reference external" href="https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.75-installer.msi">https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.75-installer.msi</a></p>
+<p>4.2.6 启动 PuTTY，填写树莓派 IP：10.42.0.10，密码：123456abc</p>
+<iframe width="696" height="422" src="//https://www.bilibili.com/video/BV1EM4y1T7ws?p=4 frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>方法2 优点：访问执行速度快，需要同时使用 MP 地面站和终端命令行比较方便；</p>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>方法2 缺点：命令行显示，对初学者来说不直观；需要远程调用 ubuntu 系统下的窗口不能用这个方法。</p>
+</div>
+</div>
+<div class="section" id="ubuntu">
+<h2>方法 3：ubuntu 系统下远程访问树莓派：<a class="headerlink" href="#ubuntu" title="永久链接至标题">¶</a></h2>
+<p>4.2.8 笔记本打开一个终端，使用下面的命令修改笔记本上的 hosts 文件：
+将树莓派 4b 的 IP 地址（10.42.0.10）加入到hosts 文件中，并保存退出;</p>
+<iframe width="696" height="422" src="//https://www.bilibili.com/video/BV1EM4y1T7ws?p=5 frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><p>关于 vim 编辑器的使用，可以参考以下教程的部分内容：</p>
+<p><a class="reference external" href="https://mp.weixin.qq.com/s/GekdU6_kTDcfvTBq9jVJFQ">https://mp.weixin.qq.com/s/GekdU6_kTDcfvTBq9jVJFQ</a></p>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>方法 3 优点：执行速度快，ubuntu 系统下可以做更多的开发</p>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>方法 3 缺点：不能同时使用 MP 地面站</p>
+</div>
+</div>
+</div>
+<div class="section" id="id4">
+<h1>树莓派的关机操作<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h1>
+<p>树莓派是机载电脑，突然断电有可能造成系统损坏无法开机。建议大家使用以下 2
+种方式进行正常的关机操作。</p>
+<ul class="simple">
+<li><p>方法 1: 在命令行终端，输入关机命令</p></li>
+<li><p>方法 2：通过web 管理界面关机</p></li>
+</ul>
+<iframe width="696" height="422" src="//https://www.bilibili.com/video/BV1EM4y1T7ws?p=10 frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><p>树莓派关机以后，等待大概 1分钟左右，树莓派电源指示灯熄灭，再断开无人机电池。</p>
+</div>
+<div class="section" id="dronekit">
+<h1>5. 使用 Dronekit 测试连接飞控并读取状态数据<a class="headerlink" href="#dronekit" title="永久链接至标题">¶</a></h1>
+<p>Dronekit 介绍：
+Dronekit 也叫 DroneKit-Python，是一个用于控制无人机的 Python库。
+有了它你就可以在机载电脑上通过 Python编程实现对无人机的控制。</p>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>Dronekit 可以显着增强自动驾驶性能，为飞行器增加更多智能，以及执行计算密集或时间敏感的任务（例如，计算机视觉，路径规划或3D建模）。</p>
+</div>
+<p>除了 DroneKit-Python 以外，还有 DroneKit-Android 以及
+DroneKit-Cloud 的 API 供不同的开发者使用。API 通过 MAVLink与飞控通信。它提供对连接飞控的遥测，
+状态和参数信息的编程访问，并实现任务管理和对飞行器运动和操作的直接控制。</p>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>相比之下，Dronekit 比搭建 ros 来控制无人机更容易上手一些。 对于Dronekit，PX4(原生固件)被支持的较少，目前不可以进行模式切换。而对Ardupilot(APM固件)支持的比较多，可调用的函数也比较多。</p>
+</div>
+<p>单目版机型我们已经在树莓派上安装好 Dronekit，并且在根目录下有一个 test文件夹，
+存放了几个演示示例，大家可以根据下面的教程操作。</p>
+<p>第一节：<a class="reference external" href="https://mp.weixin.qq.com/s/t0ur7p8Q-xN2qAHnjo2p4A">https://mp.weixin.qq.com/s/t0ur7p8Q-xN2qAHnjo2p4A</a></p>
+<p>第二节：<a class="reference external" href="https://mp.weixin.qq.com/s/GekdU6_kTDcfvTBq9jVJFQ">https://mp.weixin.qq.com/s/GekdU6_kTDcfvTBq9jVJFQ</a></p>
+<div class="section" id="id5">
+<h2>5.1 运行连接示例<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<p>使用 Dronekit 代码读取飞控当前状态，测试树莓派与飞控之间通讯是否正常：</p>
+<p>5.1.1 无人机连接电池，笔记本开启一个终端窗口；</p>
+<p>5.1.2 通过 ssh命令，连接无人机上的树莓派；</p>
+<p>5.1.3 将路径切换到 test 文件夹：</p>
+<p>5.1.4 运行 connect.py 脚本：</p>
+<p>成功运行后,会显示如下信息:</p>
+<div class="figure align-default">
+<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/df2567870c8e47338591122613ef0041.png#pic_center" />
+</div>
+<p>说明树莓派通过 Dronekit</p>
+<p>这样就成功运行了第一个DroneKit-Python 脚本。</p>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>注意：如若出现连接异常超时警报，请检查物理连接(usb 转 TTL 模块)是否连接好；或则打开 connect.py 程序查看连接端口是否为ttyUSB0；无人机通电后如果长时间没有使用串口，串口有可能关闭，无人机重新启动，再执行以上程序。</p>
+</div>
+<p>5.1.5 如果想查看 connect.py 脚本，可通过 vim 编辑器查看，执行如下命令：</p>
+<p>其中脚本注释如下：</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp"># 飞控软件版本</span>
+<span class="n">print</span> <span class="s">&quot;Autopilot Firmware version: %s&quot;</span> <span class="o">%</span> <span class="n">vehicle</span><span class="p">.</span><span class="n">version</span>
+<span class="cp"># 全球定位信息（经纬度，高度相对于平均海平面）</span>
+<span class="n">print</span> <span class="s">&quot;Global Location: %s&quot;</span> <span class="o">%</span> <span class="n">vehicle</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">global_frame</span>
+<span class="cp"># 全球定位信息（经纬度，高度相对于 home 点）</span>
+<span class="n">print</span> <span class="s">&quot;Global Location (relative altitude): %s&quot;</span> <span class="o">%</span><span class="n">vehicle</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">global_relative_frame</span>
+<span class="cp"># 相对 home 点的位置信息（向北、向东、向下）；解锁之前返回 None</span>
+<span class="n">print</span> <span class="s">&quot;Local Location: %s&quot;</span> <span class="o">%</span> <span class="n">vehicle</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">local_frame</span>
+<span class="cp"># 无人机朝向（欧拉角：roll，pitch，yaw，单位为 rad，范围-π 到+π）</span>
+<span class="n">print</span> <span class="s">&quot;Attitude: %s&quot;</span> <span class="o">%</span> <span class="n">vehicle</span><span class="p">.</span><span class="n">attitude</span>
+<span class="cp"># 三维速度（m/s）</span>
+<span class="n">print</span> <span class="s">&quot;Velocity: %s&quot;</span> <span class="o">%</span> <span class="n">vehicle</span><span class="p">.</span><span class="n">velocity</span>
+<span class="cp"># GPS 信息</span>
+<span class="n">print</span> <span class="s">&quot;GPS: %s&quot;</span> <span class="o">%</span> <span class="n">vehicle</span><span class="p">.</span><span class="n">gps_0</span>
+<span class="cp"># 地速（m/s）</span>
+<span class="n">print</span> <span class="s">&quot;Groundspeed: %s&quot;</span> <span class="o">%</span> <span class="n">vehicle</span><span class="p">.</span><span class="n">groundspeed</span>
+<span class="cp"># 空速（m/s）</span>
+<span class="n">print</span> <span class="s">&quot;Airspeed: %s&quot;</span> <span class="o">%</span> <span class="n">vehicle</span><span class="p">.</span><span class="n">airspeed</span>
+<span class="cp"># 云台信息（得到的为当前目标的 roll, pitch, yaw，而非测量值。单位为度）</span>
+<span class="n">print</span> <span class="s">&quot;Gimbal status: %s&quot;</span> <span class="o">%</span> <span class="n">vehicle</span><span class="p">.</span><span class="n">gimbal</span>
+<span class="cp"># 电池信息</span>
+<span class="n">print</span> <span class="s">&quot;Battery: %s&quot;</span> <span class="o">%</span> <span class="n">vehicle</span><span class="p">.</span><span class="n">battery</span>
+<span class="cp"># EKF（拓展卡曼滤波器）状态</span>
+<span class="n">print</span> <span class="s">&quot;EKF OK?: %s&quot;</span> <span class="o">%</span> <span class="n">vehicle</span><span class="p">.</span><span class="n">ekf_ok</span>
+<span class="cp"># 超声波或激光雷达传感器状态</span>
+<span class="n">print</span> <span class="s">&quot;Rangefinder: %s&quot;</span> <span class="o">%</span> <span class="n">vehicle</span><span class="p">.</span><span class="n">rangefinder</span>
+<span class="cp"># 无人机朝向（度）</span>
+<span class="n">print</span> <span class="s">&quot;Heading: %s&quot;</span> <span class="o">%</span> <span class="n">vehicle</span><span class="p">.</span><span class="n">heading</span>
+<span class="cp"># 是否可以解锁</span>
+<span class="n">print</span> <span class="s">&quot;Is Armable?: %s&quot;</span> <span class="o">%</span> <span class="n">vehicle</span><span class="p">.</span><span class="n">is_armable</span>
+<span class="cp"># 系统状态</span>
+<span class="n">print</span> <span class="s">&quot;System status: %s&quot;</span> <span class="o">%</span> <span class="n">vehicle</span><span class="p">.</span><span class="n">system_status</span><span class="p">.</span><span class="n">state</span>
+<span class="cp"># 当前飞行模式</span>
+<span class="n">print</span> <span class="s">&quot;Mode: %s&quot;</span> <span class="o">%</span> <span class="n">vehicle</span><span class="p">.</span><span class="n">mode</span><span class="p">.</span><span class="n">name</span>
+<span class="cp"># 解锁状态</span>
+<span class="n">print</span> <span class="s">&quot;Armed: %s&quot;</span> <span class="o">%</span> <span class="n">vehicle</span><span class="p">.</span><span class="n">armed</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="sitl-python">
+<h2>6. 启动 SITL 仿真环境并运行 python 示例<a class="headerlink" href="#sitl-python" title="永久链接至标题">¶</a></h2>
+<p>在 test文件夹下我们有几个演示脚本，如果单纯的运行脚本新手没有直观的感受。我们可以结合无人机仿真环境，来学习脚本具体的执行过程。
+前面笔记本上安装好 ubuntu 系统镜像，里面已经搭建好了 ardupilot开发环境。SITL 仿真也就包含其中。 需要注意：DroneKit-SITL</p>
+</div>
+<div class="section" id="test">
+<h2>6.1 树莓派端，进入 test 目录<a class="headerlink" href="#test" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="example2-py">
+<h2>6.2 编辑 example2.py<a class="headerlink" href="#example2-py" title="永久链接至标题">¶</a></h2>
+<p>将其中连接端口改为</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span>connection_string = &#39;10.42.0.10:14550&#39;
+</pre></div>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>6.3 笔记本端，首先要进入需要仿真的多旋翼无人机的目录下：<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<p>第一次运行，需要执行下面的命令对仿真环境进行初始化</p>
+<p>或则是仿真参数被改的乱七八糟的时候，也可用这个命令恢复初始参数。
+启动完毕，使用 Ctrl+C 终止正在运行的</p>
+</div>
+<div class="section" id="id7">
+<h2>6.4 接下来就可以启动模拟器了：<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
+<p>正常启动后，就会看到三个窗口：Terminal, Console,Map，这样最基本的软件在环仿真 程序就运行起来了。</p>
+</div>
+<div class="section" id="output-mavproxy">
+<h2>6.5 启动后通过 output 命令列出 MAVProxy 转发数据的接口，如下所示：<a class="headerlink" href="#output-mavproxy" title="永久链接至标题">¶</a></h2>
+<div class="figure align-default">
+<img alt="在这里插入图片描述" src="../../_images/E.png" />
+</div>
+</div>
+<div class="section" id="output-add-ip">
+<h2>6.6 使用 output add 命令增加树莓派 IP 接口：<a class="headerlink" href="#output-add-ip" title="永久链接至标题">¶</a></h2>
+<p>output add 10.42.0.10:14550</p>
+<div class="figure align-default">
+<img alt="在这里插入图片描述" src="../../_images/F.png" />
+</div>
+<p>与 example2.py 代码中端口地址一致。</p>
+</div>
+<div class="section" id="id8">
+<h2>6.7 树莓派端执行：<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
+<p>运行 example2.py 代码</p>
+</div>
+<div class="section" id="sitl">
+<h2>6.8 我们还可以将航点文件导入 SITL 进行演示<a class="headerlink" href="#sitl" title="永久链接至标题">¶</a></h2>
+<iframe width="696" height="422" src="//https://www.bilibili.com/video/BV1EM4y1T7ws?p=20 frameborder="no" framespacing="0" allowfullscreen="true"> </iframe></div>
+</div>
+<div class="section" id="sitl-mp-python">
+<h1>7. SITL 仿真结合MP 地面站运行 python 示例<a class="headerlink" href="#sitl-mp-python" title="永久链接至标题">¶</a></h1>
+<p>首先，将树莓派无人机接上电池，确保 ubuntu 电脑，MP
+地面站电脑都连接到树莓派WIFI 热点。</p>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>MP 地面站电脑： 要在 MP上显示仿真，遥测连接务必断开。因为遥测连接的是实际的飞控，做仿真需要连接仿真数据。</p>
+</div>
+<div class="figure align-default">
+<img alt="在这里插入图片描述" src="../../_images/G.png" />
+</div>
+<p>ubuntu 笔记本端： 启动 SITL 仿真</p>
+<p>使用 output add 命令，增加树莓派的 IP：</p>
+<p>再使用 output add 命令，增加 MP 地面站的 IPMP 地面站 IP地址在遥测页面查看：</p>
+<p>树莓派端： 运行示例代码：</p>
+<p>以下视频演示 SITL 仿真如何结合 MP 地面站运行</p>
+<iframe width="696" height="422" src="//https://www.bilibili.com/video/BV1EM4y1T7ws?p=8 frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><p>SITL 与 MP 地面站结合运行，那么我们可以直接在 MP地面站的全部参数列表里，查找需要修改的参数进行修改。</p>
+<p>有 关 SITL 仿 真 的 详 细 介 绍 ， 可 查 看 以 下 链 接 ：</p>
+<p><a class="reference external" href="https://ardupilot.org/dev/docs/using-sitl-for-ardupilot-testing.html">https://ardupilot.org/dev/docs/using-sitl-for-ardupilot-testing.html</a></p>
+</div>
+<div class="section" id="python">
+<h1>8. 使用 Python 脚本控制无人机飞行<a class="headerlink" href="#python" title="永久链接至标题">¶</a></h1>
+<p>根据 dronekit 的官方示例，我们编写了几个简单的程序控制无人机飞行。</p>
+<p>example5.py 控制无人机起飞到 3 米高度，然后悬停 5 秒，再自动降落；
+大家可根据我们提供的示例，结合自己的实际情况，编写控制程序。</p>
+<p>Dronekit 室外控制无人机起飞降落演示 ：</p>
+<iframe width="696" height="422" src="//https://www.bilibili.com/video/BV1EM4y1T7ws?p=19 frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><p>example4.py 在室外空旷处，此脚本控制无人机起飞到 3 米高度，然后飞出一个
+2 米*2 米的正方形，再自动降落。</p>
+<p>Dronekit 室 外 控 制 无 人 机 飞 出 一 个 正 方 形 演 示 ：</p>
+<iframe width="696" height="422" src="//https://www.bilibili.com/video/BV1EM4y1T7ws?p=18 frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><p>设置示例：</p>
+<ol class="arabic simple">
+<li><p>锁定无人机：</p></li>
+</ol>
+<ol class="arabic simple" start="2">
+<li><p>切换到 GUIDED 模式：</p></li>
+</ol>
+<ol class="arabic simple" start="3">
+<li><p>设置航点模式下，无人机飞行的地速为 3.2m/s（注意：读、写 groundspeed
+的意义不 同）</p></li>
+</ol>
+<p>读取参数 参数以字典（dictionary）的形式，存储在 vehicle.parameters
+变量中。具体参数的名称即为相应的键值（key）。</p>
+<p>例如，在屏幕上显示
+THR_MIN 参数（THR_MIN 代表油门处于最低时的电机怠速，以PWM 值表示）：</p>
+<p>显示全部参数：</p>
+<p>设置参数 使用读取参数类似的方法，即可设置参数：</p>
+<p>关于dronekit 的一些参考资料： 有关项目文档，请访问（这包括指南，示例和API 参考资料）</p>
+<p><a class="reference external" href="https://readthedocs.org/projects/dronekit-python/">https://readthedocs.org/projects/dronekit-python/</a>。</p>
+<p>示例源代码托管在 Github 上，作为/ dronekit-python /examples 的子文件夹。</p>
+<p>DroneKit论坛是寻求有关如何使用该库的技术支持的最佳场所。 也可以查看 Gitter channel</p>
+<ul class="simple">
+<li><p>说明文件：<a class="reference external" href="https://dronekit-python.readthedocs.io/en/latest/about/index.html">https://dronekit-python.readthedocs.io/en/latest/about/index.html</a></p></li>
+<li><p>指南：<a class="reference external" href="https://dronekit-python.readthedocs.io/en/latest/guide/index.html">https://dronekit-python.readthedocs.io/en/latest/guide/index.html</a></p></li>
+</ul>
+<ul class="simple">
+<li><p>参考：<a class="reference external" href="https://dronekit-python.readthedocs.io/en/latest/automodule.html">https://dronekit-python.readthedocs.io/en/latest/automodule.html</a></p></li>
+<li><p>例子：/dronekit-python/examples</p></li>
+<li><p>论坛：<a class="reference external" href="https://github.com/dronekit/dronekit-python/issues">https://github.com/dronekit/dronekit-python/issues</a> Gitter:</p></li>
+<li><p><a class="reference external" href="https://gitter.im/dronekit/dronekit-python">https://gitter.im/dronekit/dronekit-python</a></p></li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; 版权所有 2020, amov-dev.
+
+    </p>
+  </div>
+    
+    
+    
+    利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    
+    由 <a href="https://readthedocs.org">Read the Docs</a>开发. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

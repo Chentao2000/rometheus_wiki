@@ -1,0 +1,333 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>5-进阶功能-室外指点飞行 &mdash; P系列无人机-wiki 1.0 文档</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="5-进阶功能-室外自主降落" href="5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%A4%96%E8%87%AA%E4%B8%BB%E9%99%8D%E8%90%BD.html" />
+    <link rel="prev" title="5-进阶功能-室内自主避障" href="5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%86%85%E8%87%AA%E4%B8%BB%E9%81%BF%E9%9A%9C.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> P系列无人机-wiki
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">首页</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.amovlab.com/">阿木实验室</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E.html">免责声明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E5%AE%89%E5%85%A8%E6%8C%87%E5%AF%BC%E6%89%8B%E5%86%8C.html">安全指导手册</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">P450使用手册</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="1-%E7%A1%AC%E4%BB%B6%E4%BB%8B%E7%BB%8D.html">硬件介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2-%E8%BD%AF%E4%BB%B6%E4%BB%8B%E7%BB%8D.html">软件介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-%E9%A6%96%E6%AC%A1%E9%A3%9E%E8%A1%8C.html">首次飞行</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86md.html">常见问题处理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%86%85%E6%8C%87%E7%82%B9%E9%A3%9E%E8%A1%8C.html">进阶功能-室内指点飞行</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%86%85%E8%87%AA%E4%B8%BB%E8%B7%9F%E8%B8%AA.html">进阶功能-室内自主跟踪</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%86%85%E8%87%AA%E4%B8%BB%E9%99%8D%E8%90%BD.html">进阶功能-室内自主降落</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%86%85%E8%87%AA%E4%B8%BB%E9%81%BF%E9%9A%9C.html">进阶功能-室内自主避障</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">进阶功能-室外指点飞行</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">启动指令</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">命令行控制终端详解</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">指点飞</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">视频演示</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%A4%96%E8%87%AA%E4%B8%BB%E9%99%8D%E8%90%BD.html">进阶功能-室外自主降落</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%A4%96%E8%87%AA%E4%B8%BB%E8%B7%9F%E8%B8%AA.html">进阶功能-室外自主跟踪</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%A4%96%E8%87%AA%E4%B8%BB%E9%81%BF%E9%9A%9C.html">进阶功能-室外自主避障</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-fastplanner.html">进阶功能-FastPlanner</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">P600使用手册</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../p600/1-%E7%A1%AC%E4%BB%B6%E4%BB%8B%E7%BB%8D.html">硬件介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p600/2-%E8%BD%AF%E4%BB%B6%E4%BB%8B%E7%BB%8D.html">软件介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p600/3-%E9%A6%96%E6%AC%A1%E9%A3%9E%E8%A1%8C.html">首次飞行</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p600/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%A4%96%E6%8C%87%E7%82%B9%E9%A3%9E%E8%A1%8C.html">进阶功能-室外指点</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p600/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E6%A1%86%E9%80%89%E8%B7%9F%E8%B8%AA%E9%A3%9E%E8%A1%8C.html">进阶功能-吊舱跟踪</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p600/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E8%A7%84%E5%88%92%E9%81%BF%E9%9A%9C%E9%A3%9E%E8%A1%8C.html">进阶功能-规划避障</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">仿真使用手册</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../simulation/1-%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83.html">仿真环境</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../simulation/2-%E9%A3%9E%E8%A1%8C%E6%8E%A7%E5%88%B6%E6%A8%A1%E5%9D%97.html">飞行控制模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../simulation/3-slam%E6%A8%A1%E5%9D%97.html">slam模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../simulation/4-%E8%A7%84%E5%88%92%E6%A8%A1%E5%9D%97.html">规划模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../simulation/5-%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E6%A8%A1%E5%9D%97.html">目标检测模块</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">PX4基础配置</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/1-%E8%BF%9E%E6%8E%A5%E9%A3%9E%E6%8E%A7.html">连接飞控</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/2-%E5%9B%BA%E4%BB%B6%E5%88%B7%E5%86%99.html">固件刷写</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/3-%E6%9C%BA%E6%9E%B6%E9%80%89%E6%8B%A9.html">机架选择</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/4-%E4%BC%A0%E6%84%9F%E5%99%A8%E6%A0%A1%E5%87%86.html">传感器校准</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/5-%E9%81%A5%E6%8E%A7%E5%99%A8%E6%A0%A1%E5%87%86.html">遥控器校准</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/7-%E7%94%B5%E6%B1%A0%E6%A0%A1%E5%87%86.html">电池校准</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/8-%E7%94%B5%E8%B0%83%E6%A0%A1%E5%87%86.html">电调校准</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/9-%E5%B8%B8%E7%94%A8%E5%8F%82%E6%95%B0%E8%AE%BE%E7%BD%AE.html">常用参数设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/10-PID%E8%B0%83%E5%8F%82.html">PID调参</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/11-%E4%BB%BB%E5%8A%A1%E9%A3%9E%E8%A1%8C.html">任务飞行</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">其他</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E5%BC%80%E5%8F%91%E5%9B%A2%E9%98%9F.html">Prometheus团队</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/Prometheus%E5%8E%86%E5%8F%B2.html">Prometheus历史</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/Prometheus%E5%90%88%E4%BD%9C%E4%BC%99%E4%BC%B4%E8%AE%A1%E5%88%92.html">Prometheus合作伙伴计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC.html">联系我们</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E7%A4%BE%E5%8C%BA%E8%AE%BA%E5%9D%9B.html">社区论坛</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E8%87%B4%E8%B0%A2.html">致谢</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">P系列无人机-wiki</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>5-进阶功能-室外指点飞行</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/docs/p450/5-进阶功能-室外指点飞行.rst.txt" rel="nofollow"> 查看页面源码</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>5-进阶功能-室外指点飞行<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>本节主要讲解P450系列无人机在室外的指点飞行演示。视频紧接上节内容 <strong>首次飞行</strong>  ，默认已经通过WiFi数传连接到QGC地面站和nomachine远程连接到板载计算机，
+主要分为一下几点进行讲解：摄像头标定，二维码检测确认，坐标系确认，启动指令，起飞，降落，以及最后的视频演示。</p>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>受限于开源飞控硬件性能，飞机在长时间不用后会出现位姿漂移，要求每次飞行前电池重新上电以重启飞控和板载计算机，并严格按照wiki规范操作，避免炸机风险。</p>
+</div>
+<div class="section" id="id2">
+<h2>启动指令<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>在室外操作时，注意在QGC地面中查看自己的位置源是否更改，参数EKF2_AID_MASK设定为use gps，EKF2_HGT_MODE设定为Barometric pressure。</p>
+</div>
+<p>首先启动基本gps脚本</p>
+<p><cite>roslaunch p450_experiment p450_gps_onboard.launch</cite></p>
+<a class="reference internal image-reference" href="../../_images/指令一.png"><img alt="None" class="align-center" src="../../_images/指令一.png" style="width: 615.0px; height: 121.0px;" /></a>
+<p>然后再启动控制脚本</p>
+<p><cite>roslaunch p450_experiment p450_gps_control.launch</cite></p>
+<a class="reference internal image-reference" href="../../_images/指令二.png"><img alt="None" class="align-center" src="../../_images/指令二.png" style="width: 578.0px; height: 116.0px;" /></a>
+<p>之后会出现终端控制界面，提示有两种控制的输入方式，第一种是通过命令输入控制方式，另外一种是通过键盘按键控制方式。</p>
+<p>两种方式都可以控制无人机，一般在做实机实验过程中选择第一种通过命令输入控制方式；第二种键盘控制不太安全。接下来会详细讲解如何使用第一种命令输入控制方式实现指点飞行。</p>
+</div>
+<div class="section" id="id3">
+<h2>命令行控制终端详解<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<a class="reference internal image-reference" href="../../_images/控制终端.png"><img alt="None" class="align-center" src="../../_images/控制终端.png" style="width: 586.4px; height: 288.0px;" /></a>
+<p>其中 0 表示的是 怠速；意思就是飞机会进入offboard模式，但是在该模式下，没有对飞机进行任何指令的发送。飞机也不会有任何动作。这个指令一般也可以不用。</p>
+<p>1 表示的是 起飞；起飞点为当前点，起飞高度通过 yaml参数设置，单位是米，默认起飞高度是0.5m</p>
+<p>2 表示的是 悬停；飞机正在飞行过程中如何接受到 2 指令，会在当前时刻进入悬停状态。</p>
+<p>3 表示的是 降落；降落速度通过 yaml参数设置，单位是m/s ，默认降落速度为0.2m/s 。还有一个 上锁高度 到达上锁高度之后飞机会进入飞控的本身降落模式进而缓缓着地，
+上锁高度通过 yaml 参数进行设置，单位是米，默认是 0.18m，即认为离地不到20cm的时候进入飞控本身的降落飞行模式。</p>
+<p>4 表示的是 move模式；该模式就包含我们所称的指点飞行功能，在此模式下，又有5种子模式：
+0对应XYZ_POS,空间位置控制；
+1对应XY_POS_Z_VEL,水平面位置控制，高度速度控制；
+2对应XY_VEL_Z_POS,水平面速度控制，高度定高控制；
+3对应XYZ_VEL,空间速度控制；
+5对应TRAJECTORY，轨迹跟踪控制。</p>
+<p>常用的模式为0空间位置控制（指点飞行），接下来会讲讲实机过程中起飞的具体实现。</p>
+</div>
+<div class="section" id="id4">
+<h2>指点飞<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<p>然后我们在此命令行控制终端，根据终端提示，首先输入4并敲回车 ，表示选择move模式；然后输入 0 并敲回车，表示选择空间位置控制；然后输入 0 并敲回车，表示选择ENU_FRAME惯性坐标系；然后依次输入期望的位置坐标值（即ENU_FRAME惯性坐标系下的坐标，单位为米）x，y，z和航向角yaw（一般为0）。</p>
+<p>对坐标系做下说明：</p>
+<p>ENU_FRAME惯性坐标系始终以无人机初始上电点为原点，且x轴指向无人机机头方向，y轴指向无人机正左方，z轴指向无人机正上方，单位为米。给无人机发送绝对期望位置选择这个坐标系。</p>
+<p>BODY_FRAME机体坐标系始终以无人机本身为原点，无论无人机飞到哪里都是以无人机当前位置为原点，且x轴指向无人机机头方向，y轴指向无人机正左方，z轴指向无人机正上方，单位为米。给无人机发送相对期望位置选择这个坐标系。</p>
+<a class="reference internal image-reference" href="../../_images/控制终端输入.png"><img alt="None" class="align-center" src="../../_images/控制终端输入.png" style="width: 592.0px; height: 352.8px;" /></a>
+<p>这里我们发送的期望位置是BODY_FRAME机体坐标系下x为0，y为0，z为2的坐标点，偏航yaw为0，表示让无人机飞到相对于当前点往前（x轴）0m，往左（y轴）0m，往上（z轴）2m的期望位置，航向角保持不变。</p>
+<p>在输完期望航向角并敲回车后，我们再遥控器定点模式（SWC拨杆切到中档）下解锁并切到offboard模式（SWD拨杆切到下档），无人机会自动起飞到发送给PX4飞控的期望位置点。</p>
+<img alt="../../_images/到达期望位置点.png" src="../../_images/到达期望位置点.png" />
+<p>无人机飞到期望位置点之后，我们还可以继续在终端进行指点飞行操作，让无人机飞往下一个期望位置点。</p>
+<img alt="../../_images/继续输入指点命令.png" src="../../_images/继续输入指点命令.png" />
+<p>需要降落时我们可以将遥控器SWD拨杆切至上档退出offboard模式，飞控会自动进入position模式（注意SWC拨杆是一直保持在中档，不需要动），然后我们可以手动操控无人机降落。</p>
+</div>
+<div class="section" id="id5">
+<h2>视频演示<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<iframe  width="696" height="422" src="//player.bilibili.com/player.html?aid=289495747&bvid=BV1sf4y1478z&cid=318715792&page=13" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%A4%96%E8%87%AA%E4%B8%BB%E9%99%8D%E8%90%BD.html" class="btn btn-neutral float-right" title="5-进阶功能-室外自主降落" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%86%85%E8%87%AA%E4%B8%BB%E9%81%BF%E9%9A%9C.html" class="btn btn-neutral float-left" title="5-进阶功能-室内自主避障" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; 版权所有 2020, amov-dev.
+
+    </p>
+  </div>
+    
+    
+    
+    利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    
+    由 <a href="https://readthedocs.org">Read the Docs</a>开发. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

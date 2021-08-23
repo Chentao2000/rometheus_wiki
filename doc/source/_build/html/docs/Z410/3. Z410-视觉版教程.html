@@ -1,0 +1,564 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Z410 视觉版教程 &mdash; P系列无人机-wiki 1.0 文档</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> P系列无人机-wiki
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">首页</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.amovlab.com/">阿木实验室</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E.html">免责声明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E5%AE%89%E5%85%A8%E6%8C%87%E5%AF%BC%E6%89%8B%E5%86%8C.html">安全指导手册</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">P450使用手册</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../p450/1-%E7%A1%AC%E4%BB%B6%E4%BB%8B%E7%BB%8D.html">硬件介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/2-%E8%BD%AF%E4%BB%B6%E4%BB%8B%E7%BB%8D.html">软件介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/3-%E9%A6%96%E6%AC%A1%E9%A3%9E%E8%A1%8C.html">首次飞行</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/4-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86md.html">常见问题处理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%86%85%E6%8C%87%E7%82%B9%E9%A3%9E%E8%A1%8C.html">进阶功能-室内指点飞行</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%86%85%E8%87%AA%E4%B8%BB%E8%B7%9F%E8%B8%AA.html">进阶功能-室内自主跟踪</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%86%85%E8%87%AA%E4%B8%BB%E9%99%8D%E8%90%BD.html">进阶功能-室内自主降落</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%86%85%E8%87%AA%E4%B8%BB%E9%81%BF%E9%9A%9C.html">进阶功能-室内自主避障</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%A4%96%E6%8C%87%E7%82%B9%E9%A3%9E%E8%A1%8C.html">进阶功能-室外指点飞行</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%A4%96%E8%87%AA%E4%B8%BB%E9%99%8D%E8%90%BD.html">进阶功能-室外自主降落</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%A4%96%E8%87%AA%E4%B8%BB%E8%B7%9F%E8%B8%AA.html">进阶功能-室外自主跟踪</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%A4%96%E8%87%AA%E4%B8%BB%E9%81%BF%E9%9A%9C.html">进阶功能-室外自主避障</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-fastplanner.html">进阶功能-FastPlanner</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">P600使用手册</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../p600/1-%E7%A1%AC%E4%BB%B6%E4%BB%8B%E7%BB%8D.html">硬件介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p600/2-%E8%BD%AF%E4%BB%B6%E4%BB%8B%E7%BB%8D.html">软件介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p600/3-%E9%A6%96%E6%AC%A1%E9%A3%9E%E8%A1%8C.html">首次飞行</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p600/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%A4%96%E6%8C%87%E7%82%B9%E9%A3%9E%E8%A1%8C.html">进阶功能-室外指点</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p600/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E6%A1%86%E9%80%89%E8%B7%9F%E8%B8%AA%E9%A3%9E%E8%A1%8C.html">进阶功能-吊舱跟踪</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p600/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E8%A7%84%E5%88%92%E9%81%BF%E9%9A%9C%E9%A3%9E%E8%A1%8C.html">进阶功能-规划避障</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">仿真使用手册</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../simulation/1-%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83.html">仿真环境</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../simulation/2-%E9%A3%9E%E8%A1%8C%E6%8E%A7%E5%88%B6%E6%A8%A1%E5%9D%97.html">飞行控制模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../simulation/3-slam%E6%A8%A1%E5%9D%97.html">slam模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../simulation/4-%E8%A7%84%E5%88%92%E6%A8%A1%E5%9D%97.html">规划模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../simulation/5-%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E6%A8%A1%E5%9D%97.html">目标检测模块</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">PX4基础配置</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/1-%E8%BF%9E%E6%8E%A5%E9%A3%9E%E6%8E%A7.html">连接飞控</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/2-%E5%9B%BA%E4%BB%B6%E5%88%B7%E5%86%99.html">固件刷写</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/3-%E6%9C%BA%E6%9E%B6%E9%80%89%E6%8B%A9.html">机架选择</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/4-%E4%BC%A0%E6%84%9F%E5%99%A8%E6%A0%A1%E5%87%86.html">传感器校准</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/5-%E9%81%A5%E6%8E%A7%E5%99%A8%E6%A0%A1%E5%87%86.html">遥控器校准</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/7-%E7%94%B5%E6%B1%A0%E6%A0%A1%E5%87%86.html">电池校准</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/8-%E7%94%B5%E8%B0%83%E6%A0%A1%E5%87%86.html">电调校准</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/9-%E5%B8%B8%E7%94%A8%E5%8F%82%E6%95%B0%E8%AE%BE%E7%BD%AE.html">常用参数设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/10-PID%E8%B0%83%E5%8F%82.html">PID调参</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/11-%E4%BB%BB%E5%8A%A1%E9%A3%9E%E8%A1%8C.html">任务飞行</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">其他</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E5%BC%80%E5%8F%91%E5%9B%A2%E9%98%9F.html">Prometheus团队</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/Prometheus%E5%8E%86%E5%8F%B2.html">Prometheus历史</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/Prometheus%E5%90%88%E4%BD%9C%E4%BC%99%E4%BC%B4%E8%AE%A1%E5%88%92.html">Prometheus合作伙伴计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC.html">联系我们</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E7%A4%BE%E5%8C%BA%E8%AE%BA%E5%9D%9B.html">社区论坛</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E8%87%B4%E8%B0%A2.html">致谢</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">P系列无人机-wiki</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Z410 视觉版教程</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/docs/Z410/3. Z410-视觉版教程.rst.txt" rel="nofollow"> 查看页面源码</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="z410">
+<h1>Z410 视觉版教程<a class="headerlink" href="#z410" title="永久链接至标题">¶</a></h1>
+<p>为什么要使用双目相机？</p>
+<p>我们在室外飞行的时候，无人机定位是依靠  GPS全球定位系统。
+无人机需要接收来自GPS卫星的电子三角测量信号，同时山脉和建筑物的反射会造成多径干扰。
+所以在高大建筑周边，建筑物室内和隧道等地方就没有 GPS 信号，我们就需要使用其他方法进行定位导航。</p>
+<div class="admonition hint">
+<p class="admonition-title">提示</p>
+<p>GPS 导航现已十分普及，但 GPS 的精度目前限制在大约 10 米。另外，更新速率比较慢，大约是10Hz，并且只能支持户外，</p>
+</div>
+<p>视觉版机型在单目版基础上增加了intel T265 双目相机，可以通过v-
+slam(视觉惯性测距即时定位与地图构建)技术，让无人机进行室内定位导航。</p>
+<div class="admonition hint">
+<p class="admonition-title">提示</p>
+<p>英特尔实感追踪摄像头T265 是一个完整的嵌入式 SLAM解决方案。</p>
+</div>
+<p>英特尔实感追踪摄像头T265
+它根据VIO（视觉惯性里程计）并利用最新的算法来输出 6自由度追踪。
+通过对 6自由度姿态数据（位置和方向）的处理，发送给无人机定位。
+双目定位后，如果室内空间足够，就可以进行悬停飞行，一键返航，航点飞行等。
+从而为以后室内测试更复杂的避障，导航规划等项目奠定基础。</p>
+</div>
+<div class="section" id="t265">
+<h1>1. 一些常用的 T265 命令<a class="headerlink" href="#t265" title="永久链接至标题">¶</a></h1>
+<p>在安装有 ubuntu 系统的 PC 端，输入以下命令来实时查看 T265 视频： 演示
+视频 ：</p>
+<iframe width="696" height="422" src="//https://www.bilibili.com/video/BV1EM4y1T7ws?p=9 frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><p><a class="reference external" href="https://github.com/IntelRealSense/librealsense/tree/master/tools/realsense-viewer">https://github.com/IntelRealSense/librealsense/tree/master/tools/realsense-viewer</a></p>
+<p>rs-capture：将深度和 RGB
+数据流式传输和渲染到屏幕</p>
+<p><a class="reference external" href="https://dev.intelrealsense.com/docs/rs-capture">https://dev.intelrealsense.com/docs/rs-capture</a></p>
+<p>rs-pose:
+应用程序将打开一个窗口，在该窗口中打印设备位置相对于初始位置的当前x、y、z 值。</p>
+<p><a class="reference external" href="https://dev.intelrealsense.com/docs/rs-pose">https://dev.intelrealsense.com/docs/rs-pose</a></p>
+<p>rs-pose-predict:应用程序应打开一个窗口，在该窗口中打印设备位置相对于其初始位置的预测x、y、z 值。</p>
+<p><a class="reference external" href="https://dev.intelrealsense.com/docs/rs-pose-predict">https://dev.intelrealsense.com/docs/rs-pose-predict</a></p>
+<p>rs-enumerate-devices：</p>
+<div class="admonition hint">
+<p class="admonition-title">提示</p>
+<p>T265在出厂前就对相机进行了标定，每个相机内部都带有相机的内参和外参。</p>
+</div>
+<p>在终端中输入此命令，即可读取到T265 的配置信息 rs-enumerate-devices-c：如果需要读取到相机内参和外参，以及IMU 的参数则可以使用此命令（添加-c
+参数）</p>
+</div>
+<div class="section" id="id1">
+<h1>2. 启用 T265 定位的飞控参数设置<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>注意：默认情况下，无人机发货前设置 pixhawk 飞控使用 GPS在室外定位导航。如果要使用 T265双目相机进行室内定位，飞控参数需要进行如下设置： 把飞控连接地面站，点击配置/调试 菜单---全部参数列表:</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>以下是飞控默认数据，要使用 GPS 定位改回来就可以了</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>本机搭载 Intel T265 双目相机，在室内没有 GPS 信号的情况下，代替 GPS导航定位。双目定位后，如果室内空间足够，就可以进行悬停飞行，一键返航，失控返航，航点飞行。从而为以后室内测试更复杂的避障，导航规划等项目奠定基础。</p>
+</div>
+</div>
+<div class="section" id="t265-2">
+<h1>3. 使用 T265 定位导航的 2 种方法<a class="headerlink" href="#t265-2" title="永久链接至标题">¶</a></h1>
+<div class="section" id="pyrealsense2">
+<h2>3.1使用 pyrealsense2 启动双目相机<a class="headerlink" href="#pyrealsense2" title="永久链接至标题">¶</a></h2>
+<p>使用 pyrealsense2 定位原理：将从 Realsense T265 获得的 6
+自由度姿态数据（位置和方向）和置信度数据交由 python
+脚本处理(该脚本位于vision_to_mavros/scripts/t265_to_mavlink.py)，处理后的结果通过
+MAVLink 发送到ArduPilot 无人机，从而实现定位。 该脚本将执行以下任务：</p>
+<ul class="simple">
+<li><p>使用 pyrealsense2 的相关 API 获取 6 自由度姿势数据并跟踪置信度数据，</p></li>
+</ul>
+<p>pyrealesense2 是librealsense 的Python 包装器；</p>
+<ul class="simple">
+<li><p>执行必要的矩阵变换，以匹配 Realsense T265 和 NED</p></li>
+</ul>
+<p>的框架以及其他处理步骤；</p>
+<ul class="simple">
+<li><p>将姿态数据打包到 MAVLink 消息VISION_POSITION_ESTIMATE中，</p></li>
+</ul>
+<p>并将置信度数据打包到虚拟消息中，然后将它们以预定频率发送到ArduPilot，以免输入数据淹没飞控；</p>
+<ul class="simple">
+<li><p>自动设置 EKF home 点，让设置和飞行都更为简单；</p></li>
+</ul>
+<div class="figure align-default">
+<img alt="在这里插入图片描述" src="../../_images/H.jpg" />
+</div>
+<p>飞行器机载电脑已经安装好 librealsense 和
+pyrealsense2，根据以下步骤即可启动 T265</p>
+</div>
+<div class="section" id="missionplanner">
+<h2>3.1.1无人机接上电池，打开 missionplanner 地面站，使用数传连接地面站和飞控；<a class="headerlink" href="#missionplanner" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="ssh">
+<h2>3.1.2 使用 ssh 远程连接树莓派，操作和之前一样；<a class="headerlink" href="#ssh" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id2">
+<h2>3.1.3 打开终端，切换路径到脚本所在目录：<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id3">
+<h2>3.1.4 执行下面脚本：<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="ctr-f-mavlink-inspector">
+<h2>3.1.5 地面站软件，快捷键 CTR+F，点击 Mavlink Inspector，能看到数据已经上传到飞控了。<a class="headerlink" href="#ctr-f-mavlink-inspector" title="永久链接至标题">¶</a></h2>
+<div class="figure align-default">
+<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/fc6b7ea335c5412e8e738bd0ebb95594.png#pic_center" />
+</div>
+<p>同时 usb 转 ttl 模块上的 rx 和 tx 指示灯会快速闪烁，表示有数据传输；
+脚本正常个运行后，并且 FCU 开始接收 VISION_POSITION_ESTIMATE
+消息，就看到地面站会消息框会显示“ GPS Glitch”和“ GPS Glitch
+cleared”，确认系统已识别了外部本地化数据。</p>
+</div>
+<div class="section" id="mission-planner">
+<h2>3.1.6 使用 Mission Planner:<a class="headerlink" href="#mission-planner" title="永久链接至标题">¶</a></h2>
+<p>右键单击地图上的任意点&gt; Set Home Here &gt; Set EKF Origin Here.</p>
+<p>稍等片刻直到四轴飞行器图标出现在 Mission Planner 的地图上；</p>
+</div>
+<div class="section" id="id4">
+<h2>3.1.7 检查地图上无人机的位置运动<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<p>拿起无人机并四处走动，检查地图上是否显示了无人机的位置运动。 地图上显示的无人机的轨迹应该反映真实的运动，而不会产生过多的失真或超调。 以下是在 2m x 2m 的正方形中行走的示例。</p>
+<div class="figure align-default">
+<img alt="在这里插入图片描述" src="../../_images/J.jpg" />
+</div>
+</div>
+<div class="section" id="id5">
+<h2>3.1.8 外部定位导航数据丢失<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<p>如果外部定位导航数据由于任何原因丢失（跟踪丢失，脚本中断等），重新运行脚本也不会成功定位，需要重新启动无人机(重新上电)并执行之前的操作。
+3.1.9 飞行测试：(请有无人机操作经验的人操作)</p>
+<ul class="simple">
+<li><p>在自稳或则定高模式下解锁起飞，检查无人机飞行是否平稳；</p></li>
+<li><p>使用遥控器操作无人机四处移动，并观察 Mission Planner</p></li>
+</ul>
+<p>上的位置是否稳定；</p>
+<ul class="simple">
+<li><p>以上没有问题，保持无人机在 0.8~1 米左右高度，油门</p></li>
+</ul>
+<p>50%左右，切换到 Loiter 模式，但是如果出现任何问题，请随时准备切换回
+Stabilize (自稳)/ Alt-Hold(定高)；</p>
+<ul class="simple">
+<li><p>正常情况下，无人机应该稳定悬停在空中；</p></li>
+<li><p>遥控器操作无人机四处缓慢缓慢移动，查看无人机稳定状态。测试时注意始终准备切换回“稳定/保持”状态；</p></li>
+<li><p>如果一切正常，下次就可以在 Loiter 模式下解锁和起飞。</p></li>
+</ul>
+<p>注意：请确保双目相机水平向前安装，测试环境光照充足，双目前方特征明显的视觉范围测试。</p>
+</div>
+<div class="section" id="id6">
+<h2>3.2.0 数据查看：<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>视觉测距信息将出现在 VISO 数据闪存日志消息中。</p></li>
+<li><p>EKF的视觉测距信息将显示在 XKFD 消息中。</p></li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h2>3.2.1 参考视频：<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
+<iframe width="696" height="422" src="//https://www.bilibili.com/video/BV1EM4y1T7ws?p=7 frameborder="no" framespacing="0" allowfullscreen="true"> </iframe></div>
+</div>
+<div class="section" id="ros-t265">
+<h1>3.2 ROS 系统下启用 T265<a class="headerlink" href="#ros-t265" title="永久链接至标题">¶</a></h1>
+<div class="figure align-default">
+<img alt="在这里插入图片描述" src="../../_images/H.jpg" />
+</div>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>本机已经安装好 librealsense、realsense-ros、mavros、vision_to_mavros等必要的组件</p>
+<p>根据以下教程即可启动 T265 定位。</p>
+</div>
+<div class="section" id="id8">
+<h2>3.2.1 主从机设置完成<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id9">
+<h2>3.2.2 无人机接上电池，打开 missionplanner 地面站，使用数传连接地面站和飞控；<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id10">
+<h2>3.2.3 使用 ssh 远程连接树莓派；<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="realsense-ros">
+<h2>3.2.4 开启一个终端，运行 realsense-ros 节点<a class="headerlink" href="#realsense-ros" title="永久链接至标题">¶</a></h2>
+<p>/camera/odom/sample/ 和/tf 主题将以 200Hz 频率发布。</p>
+</div>
+<div class="section" id="mavros">
+<h2>3.2.5 开启另一个终端，运行 mavros 节点<a class="headerlink" href="#mavros" title="永久链接至标题">¶</a></h2>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">roslaunch</span> <span class="n">mavros</span> <span class="n">apm</span><span class="p">.</span><span class="n">launch</span>
+</pre></div>
+</div>
+<p>未发布。</p>
+</div>
+<div class="section" id="vision-to-mavros">
+<h2>3.2.6 开启第三个终端，运行 vision_to_mavros 节点<a class="headerlink" href="#vision-to-mavros" title="永久链接至标题">¶</a></h2>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">roslaunch</span> <span class="n">vision_to_mavros</span> <span class="n">t265_tf_to_mavros</span><span class="p">.</span><span class="n">launch</span>
+</pre></div>
+</div>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">rostopic</span> <span class="n">echo</span> <span class="o">/</span><span class="n">mavros</span><span class="o">/</span><span class="n">vision_pose</span><span class="o">/</span><span class="n">pose</span>
+</pre></div>
+</div>
+<p>现在应该显示来自 T265 的姿态数据。</p>
+<p>应该显示该主题以 30Hz 的频率发布。</p>
+</div>
+<div class="section" id="ekf-home">
+<h2>3.2.7 设置 EKF HOME 点<a class="headerlink" href="#ekf-home" title="永久链接至标题">¶</a></h2>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">rosrun</span> <span class="n">vision_to_mavros</span> <span class="n">set_origin</span><span class="p">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>使用 Mission Planner: 右键单击地图上的任意点&gt; Set Home Here &gt; Set EKF</p></li>
+</ul>
+<p>Origin Here.</p>
+<ul class="simple">
+<li><p>使用脚本设置 EKF HOME 点，开启第四个终端，运行：</p></li>
+</ul>
+</div>
+<div class="section" id="id11">
+<h2>3.2.8 室内定位运行<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h2>
+<p>打开地面站软件，快捷键 CTR+F，点击 Mavlink Inspector，能看到数据已经上传到飞控了。室内定位运行成功，切换到 loiter 悬停模式，指示灯是蓝色，表示可以解锁；</p>
+<p>如果切换到 loiter 变成黄灯，表示室内定位运行失败，请重新检查再启动。</p>
+<div class="figure align-default">
+<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/f08cd4a1417a4e53aa1faace1785dc41.png#pic_center" />
+</div>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>同时 usb 转 ttl 模块上的 rx 和 tx 指示灯会快速闪烁，表示有数据传输；</p>
+</div>
+</div>
+<div class="section" id="id12">
+<h2>3.2.9 四轴飞行器图标出现在 Mission Planner<a class="headerlink" href="#id12" title="永久链接至标题">¶</a></h2>
+<p>稍等片刻直到四轴飞行器图标出现在 Mission Planner 的地图上；</p>
+</div>
+<div class="section" id="m-x-2m">
+<h2>3.3.0 2m x 2m 的正方形中行走<a class="headerlink" href="#m-x-2m" title="永久链接至标题">¶</a></h2>
+<p>拿起无人机并四处走动，检查地图上是否显示了无人机的位置运动。 地图上显示的无人机的轨迹应该反映真实的运动，而不会产生过多的失真或超调。 以下是在 2m x 2m 的正方形中行走的示例</p>
+<div class="figure align-default">
+<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/48f6d8af59c34349a900ae4b18f4a5a5.png#pic_center" />
+</div>
+</div>
+<div class="section" id="id13">
+<h2>3.3.1 飞行测试：(请有无人机操作经验的人操作)<a class="headerlink" href="#id13" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>在自稳或则定高模式下解锁起飞，检查无人机飞行是否平稳；</p></li>
+<li><p>使用遥控器操作无人机四处移动，并观察 Mission Planner 和 rviz</p></li>
+</ul>
+<p>上的位置，以查看跟踪是否稳定；</p>
+<ul class="simple">
+<li><p>以上没有问题，保持无人机在 0.8~1</p></li>
+</ul>
+<p>米左右高度，油门 50%左右，切换到Loiter，但是如果出现任何问题，请随时准备切换回 Stabilize / Alt-Hold。</p>
+<ul class="simple">
+<li><p>正常情况下，无人机应稳定悬停并能够保持其位置。</p></li>
+</ul>
+<p>使用遥控器缓慢移动无人机 2-3 米，验证比例（便于在 rviz 上查看）</p>
+<ul class="simple">
+<li><p>如果一切正常，下次就可以在 Loiter 模式下解锁和起飞。 注意：在切换到</p></li>
+</ul>
+<p>Loiter 模式之前，请始终确认位置反馈运行正常。
+注意环境中的工作边界，即由于缺少功能，请勿快速移动或旋转运动，可能丢失跟踪定位。</p>
+<ul class="simple">
+<li><p>如果外部定位导航数据由于任何原因丢失（跟踪丢失，脚本中断等），重新运行脚本也不会成功定位，需要重新启动无人机(重新上电)并执行之前的操作。</p></li>
+</ul>
+</div>
+<div class="section" id="id14">
+<h2>3.3.2 数据查看：<a class="headerlink" href="#id14" title="永久链接至标题">¶</a></h2>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">rosrun</span> <span class="n">vision_to_mavros</span> <span class="n">set_origin</span><span class="p">.</span><span class="n">py</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id15">
+<h2>3.3.3 令一次启动所有节点：<a class="headerlink" href="#id15" title="永久链接至标题">¶</a></h2>
+<p>成功运行以上节点，下次可以只需要开启一个终端，使用下面这个命令一次启动所有节点：
+此命令一次执行 3 个 launch：</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">rs_t265</span><span class="p">.</span><span class="n">launch</span> <span class="n">apm</span><span class="p">.</span><span class="n">launch</span> <span class="n">t265_tf_to_mavros</span><span class="p">.</span><span class="n">launch</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id16">
+<h1>4. 以后扩展开发方向<a class="headerlink" href="#id16" title="永久链接至标题">¶</a></h1>
+<div class="section" id="a1-a2">
+<h2>4.1 可测试扩展思岚 A1,A2 激光雷达避障(简单避障，不建图)；<a class="headerlink" href="#a1-a2" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="g-5g-4g-5g">
+<h2>4.2 可测试扩展 4G/5G 通讯，远距离图数传，从而实现 4G/5G 控制；<a class="headerlink" href="#g-5g-4g-5g" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="apriltags-gps-ros">
+<h2>4.3 可测试使用 AprilTags 进行的室内非 GPS 飞行（基于ROS）；<a class="headerlink" href="#apriltags-gps-ros" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="ros-realsense-t265-apriltag">
+<h2>4.4 可测试使用 ROS，Realsense T265 相机和AprilTag 进行精确着陆；<a class="headerlink" href="#ros-realsense-t265-apriltag" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="apriltags">
+<h2>4.5 可测试使用 Apriltags 进行室内导航；<a class="headerlink" href="#apriltags" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="rviz-t265">
+<h2>4.6 可测试在 RVIZ 里面查看 T265 轨迹；<a class="headerlink" href="#rviz-t265" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id17">
+<h2>4.7 可测试将整套系统可移植到无人车或则无人船上<a class="headerlink" href="#id17" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id18">
+<h2>4.8 .....<a class="headerlink" href="#id18" title="永久链接至标题">¶</a></h2>
+<p>以上教程是Z410 的一些基本操作。大家可以利用 ubuntu 系统与ROS
+系统的开源特性，在此基础上进行扩展，比如避障，跟踪，导航等方面。大家也可以加入到
+Z410
+技术讨论微信群，分享自己在开发方面的心得、方法、示例和对遇到的问题进行讨论。</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; 版权所有 2020, amov-dev.
+
+    </p>
+  </div>
+    
+    
+    
+    利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    
+    由 <a href="https://readthedocs.org">Read the Docs</a>开发. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,453 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>首次飞行 &mdash; P系列无人机-wiki 1.0 文档</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="常见问题处理" href="4-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86md.html" />
+    <link rel="prev" title="软件介绍" href="2-%E8%BD%AF%E4%BB%B6%E4%BB%8B%E7%BB%8D.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> P系列无人机-wiki
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">首页</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.amovlab.com/">阿木实验室</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E.html">免责声明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E5%AE%89%E5%85%A8%E6%8C%87%E5%AF%BC%E6%89%8B%E5%86%8C.html">安全指导手册</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">P450使用手册</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="1-%E7%A1%AC%E4%BB%B6%E4%BB%8B%E7%BB%8D.html">硬件介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2-%E8%BD%AF%E4%BB%B6%E4%BB%8B%E7%BB%8D.html">软件介绍</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">首次飞行</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">飞行环境</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">电脑软件准备工作</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#qgc">安装QGC地面站</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nomachine">安装nomachine</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">硬件准备工作</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">qgc远程连接到飞机</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">nomachine远程连接</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#p450wifi">板载计算机连接p450飞机数传wifi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ip">查看板载计算机ip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">nomachine远程连接板载计算机</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">启动脚本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">检查各项数据是否正常</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id11">遥控器定点模式飞行</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id12">视频演示</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="4-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86md.html">常见问题处理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%86%85%E6%8C%87%E7%82%B9%E9%A3%9E%E8%A1%8C.html">进阶功能-室内指点飞行</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%86%85%E8%87%AA%E4%B8%BB%E8%B7%9F%E8%B8%AA.html">进阶功能-室内自主跟踪</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%86%85%E8%87%AA%E4%B8%BB%E9%99%8D%E8%90%BD.html">进阶功能-室内自主降落</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%86%85%E8%87%AA%E4%B8%BB%E9%81%BF%E9%9A%9C.html">进阶功能-室内自主避障</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%A4%96%E6%8C%87%E7%82%B9%E9%A3%9E%E8%A1%8C.html">进阶功能-室外指点飞行</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%A4%96%E8%87%AA%E4%B8%BB%E9%99%8D%E8%90%BD.html">进阶功能-室外自主降落</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%A4%96%E8%87%AA%E4%B8%BB%E8%B7%9F%E8%B8%AA.html">进阶功能-室外自主跟踪</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%A4%96%E8%87%AA%E4%B8%BB%E9%81%BF%E9%9A%9C.html">进阶功能-室外自主避障</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-fastplanner.html">进阶功能-FastPlanner</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">P600使用手册</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../p600/1-%E7%A1%AC%E4%BB%B6%E4%BB%8B%E7%BB%8D.html">硬件介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p600/2-%E8%BD%AF%E4%BB%B6%E4%BB%8B%E7%BB%8D.html">软件介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p600/3-%E9%A6%96%E6%AC%A1%E9%A3%9E%E8%A1%8C.html">首次飞行</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p600/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%A4%96%E6%8C%87%E7%82%B9%E9%A3%9E%E8%A1%8C.html">进阶功能-室外指点</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p600/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E6%A1%86%E9%80%89%E8%B7%9F%E8%B8%AA%E9%A3%9E%E8%A1%8C.html">进阶功能-吊舱跟踪</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p600/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E8%A7%84%E5%88%92%E9%81%BF%E9%9A%9C%E9%A3%9E%E8%A1%8C.html">进阶功能-规划避障</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">仿真使用手册</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../simulation/1-%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83.html">仿真环境</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../simulation/2-%E9%A3%9E%E8%A1%8C%E6%8E%A7%E5%88%B6%E6%A8%A1%E5%9D%97.html">飞行控制模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../simulation/3-slam%E6%A8%A1%E5%9D%97.html">slam模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../simulation/4-%E8%A7%84%E5%88%92%E6%A8%A1%E5%9D%97.html">规划模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../simulation/5-%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E6%A8%A1%E5%9D%97.html">目标检测模块</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">PX4基础配置</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/1-%E8%BF%9E%E6%8E%A5%E9%A3%9E%E6%8E%A7.html">连接飞控</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/2-%E5%9B%BA%E4%BB%B6%E5%88%B7%E5%86%99.html">固件刷写</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/3-%E6%9C%BA%E6%9E%B6%E9%80%89%E6%8B%A9.html">机架选择</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/4-%E4%BC%A0%E6%84%9F%E5%99%A8%E6%A0%A1%E5%87%86.html">传感器校准</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/5-%E9%81%A5%E6%8E%A7%E5%99%A8%E6%A0%A1%E5%87%86.html">遥控器校准</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/7-%E7%94%B5%E6%B1%A0%E6%A0%A1%E5%87%86.html">电池校准</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/8-%E7%94%B5%E8%B0%83%E6%A0%A1%E5%87%86.html">电调校准</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/9-%E5%B8%B8%E7%94%A8%E5%8F%82%E6%95%B0%E8%AE%BE%E7%BD%AE.html">常用参数设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/10-PID%E8%B0%83%E5%8F%82.html">PID调参</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/11-%E4%BB%BB%E5%8A%A1%E9%A3%9E%E8%A1%8C.html">任务飞行</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">其他</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E5%BC%80%E5%8F%91%E5%9B%A2%E9%98%9F.html">Prometheus团队</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/Prometheus%E5%8E%86%E5%8F%B2.html">Prometheus历史</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/Prometheus%E5%90%88%E4%BD%9C%E4%BC%99%E4%BC%B4%E8%AE%A1%E5%88%92.html">Prometheus合作伙伴计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC.html">联系我们</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E7%A4%BE%E5%8C%BA%E8%AE%BA%E5%9D%9B.html">社区论坛</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E8%87%B4%E8%B0%A2.html">致谢</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">P系列无人机-wiki</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>首次飞行</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/docs/p450/3-首次飞行.rst.txt" rel="nofollow"> 查看页面源码</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>首次飞行<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>本节主要讲解T265相机配置下无人机的首次飞行。</p>
+<div class="section" id="id2">
+<h2>飞行环境<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>我们的飞行环境如下图所示</p>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>注意使用T265进行定位的飞行环境需要特征点丰富，比如有二维码或其他特征点明显的物体。</p>
+</div>
+<img alt="../../_images/飞行环境.jpg" src="../../_images/飞行环境.jpg" />
+</div>
+<div class="section" id="id3">
+<h2>电脑软件准备工作<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>准备一台笔记本电脑，电脑系统不做要求，可以是Windows7，Windows10或者是Ubuntu系统。需要安装QGroundControl(以下简称QGC)和nomachine。
+QGC的作用是连接到飞机，监控飞机本身的状态（传感器是否正常，参数配置是否正常）；nomachine用作远程连接到板载计算机。</p>
+<div class="admonition hint">
+<p class="admonition-title">提示</p>
+<p>软件安装包请在百度网盘自主下载
+<a class="reference external" href="https://pan.baidu.com/share/init?surl=M2ucIqRqnKoFI8ylLpgquQ">网盘链接</a></p>
+<p>提取码: <strong>amov</strong></p>
+</div>
+<img alt="../../_images/package.png" src="../../_images/package.png" />
+<p>从图中可以看到，有不同操作系统下的安装包，根据自己笔记本电脑系统安装相应的QGC和nomachine。</p>
+<div class="section" id="qgc">
+<h3>安装QGC地面站<a class="headerlink" href="#qgc" title="永久链接至标题">¶</a></h3>
+<p>正确安装上面安装包之后，打开QGC地面站：</p>
+<img alt="../../_images/1-qgc.png" src="../../_images/1-qgc.png" />
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>最下方的版本是V4.0.8</p>
+</div>
+<img alt="../../_images/1-qgc-vision.png" src="../../_images/1-qgc-vision.png" />
+</div>
+<div class="section" id="nomachine">
+<h3>安装nomachine<a class="headerlink" href="#nomachine" title="永久链接至标题">¶</a></h3>
+<p>正常安装按完成之后，打开nomachine：</p>
+<img alt="../../_images/1-nomachine.png" src="../../_images/1-nomachine.png" />
+</div>
+</div>
+<div class="section" id="id5">
+<h2>硬件准备工作<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<p>p450无人机+富斯i6s遥控器</p>
+<img alt="../../_images/2-p450vehicle-logo.jpg" src="../../_images/2-p450vehicle-logo.jpg" />
+<p>5300mah/4000mah航模锂电池</p>
+<a class="reference internal image-reference" href="../../_images/2-5300mah.png"><img alt="None" class="align-center" src="../../_images/2-5300mah.png" style="width: 400.0px; height: 400.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/2-4000mah.png"><img alt="None" class="align-center" src="../../_images/2-4000mah.png" style="width: 400.0px; height: 400.0px;" /></a>
+<p>遥控器电池</p>
+<a class="reference internal image-reference" href="../../_images/2-rcbattery.png"><img alt="None" class="align-center" src="../../_images/2-rcbattery.png" style="width: 322.8px; height: 364.8px;" /></a>
+<p>安全绳</p>
+<a class="reference internal image-reference" href="../../_images/2-safestring.png"><img alt="None" class="align-center" src="../../_images/2-safestring.png" style="width: 461.4px; height: 260.4px;" /></a>
+</div>
+<div class="section" id="id6">
+<h2>qgc远程连接到飞机<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<p>首先连接到飞机的数传wifi，命名为amov-uav#####,“#####”代表出厂序列号。</p>
+<a class="reference internal image-reference" href="../../_images/3-connectwifi.png"><img alt="None" class="align-center" src="../../_images/3-connectwifi.png" style="width: 362.40000000000003px; height: 147.20000000000002px;" /></a>
+<p>密码为12345678</p>
+<p>电脑连上飞机的数传wifi后，打开QGC地面站，在通讯连接下面选择“添加”</p>
+<img alt="../../_images/3-addwifi.png" src="../../_images/3-addwifi.png" />
+<p>类型选择“   TCP”，主机地址为“192.168.10.###”，“###”为wifi名字的后三位数字。端口号为“6000”。</p>
+<a class="reference internal image-reference" href="../../_images/3-tcp-ip.png"><img alt="None" class="align-center" src="../../_images/3-tcp-ip.png" style="width: 375.3px; height: 285.3px;" /></a>
+<p>然后点击“连接”，连接成功后如下图所示</p>
+<img alt="../../_images/3-connectsuccess.png" src="../../_images/3-connectsuccess.png" />
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>如果做无人机室内测试，需要在地面站修改参数EKF2_AID_MASK，EKF2_HGT_MODE，详细操作如下：</p>
+<p>首先点击参数（Parameters）按钮，进入参数修改界面，如下。</p>
+<img alt="../../_images/3-parameters.png" src="../../_images/3-parameters.png" />
+<p>在search栏输入aid，选择EKF2_AID_MASK参数</p>
+<img alt="../../_images/3-aid1.png" src="../../_images/3-aid1.png" />
+<p>在窗口右上侧会弹出子页面,如下图所示。</p>
+<img alt="../../_images/3-aid2.png" src="../../_images/3-aid2.png" />
+<p>一般默认选择第一项use GPS,由于我们室内飞行使用的是T265作为位置定位源，所以需将此参数改为4、5项，修改后保存。</p>
+<p>在search栏输入hgt,选择EKF2_HGT_MODE参数栏</p>
+<img alt="../../_images/3-hgt1.png" src="../../_images/3-hgt1.png" />
+<p>在窗口右上弹出的子页面上，点击下拉菜单，选择vision，如下图所示</p>
+<img alt="../../_images/3-hgt2.png" src="../../_images/3-hgt2.png" />
+<p>最后保存退出。</p>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>nomachine远程连接<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
+<div class="section" id="p450wifi">
+<h3>板载计算机连接p450飞机数传wifi<a class="headerlink" href="#p450wifi" title="永久链接至标题">¶</a></h3>
+<p>如下图所示，选择wifi名称，输入密码。密码连接可参考“qgc远程连接到飞机”</p>
+<a class="reference internal image-reference" href="../../_images/4-boardwifi.png"><img alt="None" class="align-center" src="../../_images/4-boardwifi.png" style="width: 275.0px; height: 337.0px;" /></a>
+</div>
+<div class="section" id="ip">
+<h3>查看板载计算机ip<a class="headerlink" href="#ip" title="永久链接至标题">¶</a></h3>
+<p>查看板载计算机ip有两种方法，第一种方法是点击右上角“wifi信号”，选择“Connection Information”，
+在IPv4-IP Address下，用“红框”标记的就是板载计算机的ip地址。</p>
+<a class="reference internal image-reference" href="../../_images/4-boardip1.png"><img alt="None" class="align-center" src="../../_images/4-boardip1.png" style="width: 281.0px; height: 419.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/4-boardip2.png"><img alt="None" class="align-center" src="../../_images/4-boardip2.png" style="width: 361.0px; height: 446.0px;" /></a>
+<p>第二种方法是点击右键，选择“Open Terminal”,输入“ifconfig”,在最下面wlan0下用“红框”标记的就是板载计算机的ip地址。</p>
+<a class="reference internal image-reference" href="../../_images/4-boardip3.png"><img alt="None" class="align-center" src="../../_images/4-boardip3.png" style="width: 312.0px; height: 181.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/4-boardip4.png"><img alt="None" class="align-center" src="../../_images/4-boardip4.png" style="width: 212.0px; height: 54.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/4-boardip5.png"><img alt="None" class="align-center" src="../../_images/4-boardip5.png" style="width: 701.0px; height: 153.0px;" /></a>
+</div>
+<div class="section" id="id8">
+<h3>nomachine远程连接板载计算机<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h3>
+<p>点击New</p>
+<a class="reference internal image-reference" href="../../_images/4-nom-1.png"><img alt="None" class="align-center" src="../../_images/4-nom-1.png" style="width: 502.0px; height: 116.0px;" /></a>
+<p>在Protocol下选择NX，点击Continue。</p>
+<a class="reference internal image-reference" href="../../_images/4-nom-2.png"><img alt="None" class="align-center" src="../../_images/4-nom-2.png" style="width: 669.1999999999999px; height: 473.2px;" /></a>
+<p>在“Host”下填写板载计算机的ip地址，板载计算机地址参考步骤2，“Port”下默认4000。</p>
+<a class="reference internal image-reference" href="../../_images/4-nom-3.png"><img alt="None" class="align-center" src="../../_images/4-nom-3.png" style="width: 684.5999999999999px; height: 475.99999999999994px;" /></a>
+<p>在Authentication下默认是Password，点击“Continue”。</p>
+<a class="reference internal image-reference" href="../../_images/4-nom-4.png"><img alt="None" class="align-center" src="../../_images/4-nom-4.png" style="width: 700.0px; height: 479.49999999999994px;" /></a>
+<p>在Proxy下默认是“Don’t use a proxy”，点击“Continue”。</p>
+<a class="reference internal image-reference" href="../../_images/4-nom-5.png"><img alt="None" class="align-center" src="../../_images/4-nom-5.png" style="width: 688.0999999999999px; height: 480.9px;" /></a>
+<p>在Save as下会生成默认的name，可以不做更改，点击“Done”。</p>
+<a class="reference internal image-reference" href="../../_images/4-nom-6.png"><img alt="None" class="align-center" src="../../_images/4-nom-6.png" style="width: 709.8px; height: 488.59999999999997px;" /></a>
+<p>按照上述步骤操作，会自动生成如下图所示用红框标起的链接，点击“Connect”。</p>
+<a class="reference internal image-reference" href="../../_images/4-nom-7.png"><img alt="None" class="align-center" src="../../_images/4-nom-7.png" style="width: 668.5px; height: 473.9px;" /></a>
+<p>在“Username”和“Password”下输入“amov”</p>
+<img alt="../../_images/4-nom-8.png" src="../../_images/4-nom-8.png" />
+<p>Nomachine成功连接板载计算机后会显示如下界面</p>
+<img alt="../../_images/4-nom-9.png" src="../../_images/4-nom-9.png" />
+<p>此时可同时连接qgc与板载计算机，方便后续实验操作。</p>
+<img alt="../../_images/4-nom-10.png" src="../../_images/4-nom-10.png" />
+</div>
+</div>
+<div class="section" id="id9">
+<h2>启动脚本<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h2>
+<p>首先在终端输入“rs-sensor-control”,查看有没有传感器连接，正常情况下如
+下图所示，会显示传感器的序列号。</p>
+<a class="reference internal image-reference" href="../../_images/5-sensor-control.png"><img alt="None" class="align-center" src="../../_images/5-sensor-control.png" style="width: 497.0px; height: 187.0px;" /></a>
+<p>启动脚本在下图所示的目录下面</p>
+<img alt="../../_images/5-vio-onboard.png" src="../../_images/5-vio-onboard.png" />
+<p>在终端输入如下命令，启动脚本</p>
+<img alt="../../_images/5-run-script.png" src="../../_images/5-run-script.png" />
+<p>启动脚本后如下图所示</p>
+<img alt="../../_images/5-roslaunch.png" src="../../_images/5-roslaunch.png" />
+</div>
+<div class="section" id="id10">
+<h2>检查各项数据是否正常<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h2>
+<p>在启动脚本后，首先查看地面站，地面站上会显示飞机的航向为正东，就是“E”。</p>
+<a class="reference internal image-reference" href="../../_images/6-qgc-e.png"><img alt="None" class="align-center" src="../../_images/6-qgc-e.png" style="width: 248.0px; height: 364.0px;" /></a>
+<p>第一个终端正常情况下如下图所示，各项数据均正常</p>
+<img alt="../../_images/6-first.png" src="../../_images/6-first.png" />
+<p>第二个终端如下图所示，查看飞机的位置、速度、角度与角速度信息是否正常,移动飞机,查看飞机的位置信息是否正常，飞机向前为X轴正方向，向左为Y轴正方
+向，向上为Z轴正方向。下图例子为将飞机向后向上各移动大概1m，数据显示正常。</p>
+<blockquote>
+<div><img alt="../../_images/6-twice.png" src="../../_images/6-twice.png" />
+<p>第三个终端如下图所示，显示“Program is running”即表示脚本正常运行。</p>
+<blockquote>
+<div><img alt="../../_images/6-third.png" src="../../_images/6-third.png" />
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="id11">
+<h2>遥控器定点模式飞行<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h2>
+<p>如下图所示，将“SWC”开关拨到中间一档， 切到“定点模式”</p>
+<a class="reference internal image-reference" href="../../_images/7-pos.png"><img alt="None" class="align-center" src="../../_images/7-pos.png" style="width: 598.8px; height: 447.0px;" /></a>
+<p>然后左手“右下”解锁飞机，如下图所示。</p>
+<img alt="../../_images/7-arm.png" src="../../_images/7-arm.png" />
+<p>起飞后如下图所示，进行定点模式飞行。</p>
+<a class="reference internal image-reference" href="../../_images/7-viofly.png"><img alt="None" class="align-center" src="../../_images/7-viofly.png" style="width: 656.8000000000001px; height: 623.2px;" /></a>
+</div>
+<div class="section" id="id12">
+<h2>视频演示<a class="headerlink" href="#id12" title="永久链接至标题">¶</a></h2>
+<iframe width="696" height="422" src="//player.bilibili.com/player.html?aid=289495747&bvid=BV1sf4y1478z&cid=311386031&page=3" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="4-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86md.html" class="btn btn-neutral float-right" title="常见问题处理" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="2-%E8%BD%AF%E4%BB%B6%E4%BB%8B%E7%BB%8D.html" class="btn btn-neutral float-left" title="软件介绍" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; 版权所有 2020, amov-dev.
+
+    </p>
+  </div>
+    
+    
+    
+    利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    
+    由 <a href="https://readthedocs.org">Read the Docs</a>开发. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

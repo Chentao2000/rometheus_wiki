@@ -1,0 +1,351 @@
+.. 首次飞行:
+
+首次飞行
+==============
+
+本节主要讲解室外GPS下的P600首次飞行。
+
+飞行环境
+-----------------------------
+我们的飞行环境如下图所示
+
+.. attention::
+
+    注意使用室外GPS定位的飞行环境需要在空旷的区域，搜星数量在10颗以上，等待gps尾灯闪烁绿灯的时候即可。
+
+
+.. image:: ../../images/p600/首次飞行/飞行环境.png
+
+
+电脑软件准备工作
+------------------
+
+准备一台笔记本电脑，电脑系统不做要求，可以是Windows7，Windows10或者是Ubuntu系统。需要安装QGroundControl(以下简称QGC)和nomachine。
+QGC的作用是连接到飞机，监控飞机本身的状态（传感器是否正常，参数配置是否正常）；nomachine用作远程连接到板载计算机。
+
+.. hint::
+
+    软件安装包请在百度网盘自主下载
+    `网盘链接 <https://pan.baidu.com/share/init?surl=M2ucIqRqnKoFI8ylLpgquQ>`_
+    
+    提取码: **amov**
+
+.. image:: ../../images/p450/first_fly/package.png
+
+从图中可以看到，有不同操作系统下的安装包，根据自己笔记本电脑系统安装相应的QGC和nomachine。
+
+安装QGC地面站
+^^^^^^^^^^^^^^^^^^^^^^^
+
+正确安装上面安装包之后，打开QGC地面站：
+
+.. image:: ../../images/p450/first_fly/1-qgc.png
+
+.. attention::
+
+    最下方的版本是V4.0.8
+
+
+.. image:: ../../images/p450/first_fly/1-qgc-vision.png
+   :align: center
+安装nomachine
+^^^^^^^^^^^^^^^^^^^^^^^
+
+正常安装按完成之后，打开nomachine：
+
+.. image:: ../../images/p450/first_fly/1-nomachine.png
+
+硬件准备工作
+------------------
+p600无人机，如下图所示
+
+.. image:: ../../images/p600/首次飞行/p600飞机.png
+
+P600电池
+
+.. image:: ../../images/p600/首次飞行/p600电池.png
+   :height: 800px
+   :width: 800px
+   :scale: 50%
+   :alt: None
+   :align: center
+
+
+
+遥控器电池
+
+.. image:: ../../images/p450/first_fly/2-rcbattery.png
+   :height: 912px
+   :width: 807px
+   :scale: 40%
+   :alt: None
+   :align: center
+
+安全绳
+
+.. image:: ../../images/p450/first_fly/2-safestring.png
+   :height: 434px
+   :width: 769px
+   :scale: 60%
+   :alt: None
+   :align: center
+
+
+飞行前准备
+-----------------
+将螺旋桨摆好，同时检查螺旋桨是否有松动，再检查下螺丝是否有松动，以及连接线是否对螺旋桨有影响
+
+.. image:: ../../images/p600/首次飞行/将螺旋桨拨至外面.png
+   :height: 800px
+   :width: 800px
+   :scale: 50%
+   :alt: None
+   :align: center
+如下图所示
+
+
+.. image:: ../../images/p600/首次飞行/地面端连接电脑.png
+   :height: 800px
+   :width: 900px
+   :scale: 80%
+
+.. image:: ../../images/p600/首次飞行/拨正.png
+   :height: 800px
+   :width: 800px
+   :scale: 50%
+   :alt: None
+   :align: center
+   
+接着我们检查下电池是否有破损、漏液等情况
+
+.. image:: ../../images/p600/首次飞行/检查电池.png
+   :height: 800px
+   :width: 800px
+   :scale: 50%
+   :alt: None
+   :align: center
+确保电池没问题后，将电池固定在飞机上，确保电池不会松动，放在水平位置
+
+
+打开地面站后：1、点击左上角图标 2、点击通讯连接 3、点击添加
+
+.. image:: ../../images/p600/首次飞行/将电池固定在飞机上.png
+   :height: 800px
+   :width: 800px
+   :scale: 50%
+   :alt: None
+   :align: center
+   
+打开遥控器，查看遥控器电量TX（在遥控器显示屏的右上角）
+
+
+.. image:: ../../images/p600/首次飞行/检查遥控器电量.png
+   :height: 800px
+   :width: 800px
+   :scale: 50%
+   :alt: None
+   :align: center
+首次飞行用到遥控器的两个摇杆和一个拨杆：
+
+左边的摇杆：上下控制无人机的高度，左右控制无人机的偏航；
+
+右边的摇杆：上下控制无人机的前进与后退，左右控制无人机的向左与向右；
+
+拨杆（SWC）：飞行模式切换开关，上位代表自稳模式，中位代表定点模式，下位代表降落模式。
+
+确保遥控器、飞机上的桨叶与螺丝没有松动的情况下，给无人机上电，并且按下开机按钮
+
+.. image:: ../../images/p600/首次飞行/上电开机.png
+   :height: 800px
+   :width: 800px
+   :scale: 50%
+   :alt: None
+   :align: center
+电机灯亮以后证明开机成功
+
+.. image:: ../../images/p600/首次飞行/电机灯亮后.png
+   :height: 800px
+   :width: 800px
+   :scale: 50%
+   :alt: None
+   :align: center
+QGC连接到飞机
+-----------------
+
+首先将地面端的图数传连接到自己电脑（最好将wifi关掉），如下图所示
+
+.. image:: ../../images/p600/首次飞行/地面端连接电脑.png
+   :height: 800px
+   :width: 800px
+   :scale: 50%
+   :alt: None
+   :align: center
+
+
+然后按照图示所示：
+
+1、点击“未识别的网络”
+
+2、点击“更改适配器”
+
+3、点击“以太网”
+
+4、点击“属性”
+
+
+.. image:: ../../images/p600/首次飞行/查看板载IP_1.png
+   :height: 400px
+   :width: 361px
+   :scale: 100%
+   :alt: None
+   :align: center
+
+5、点击Internet协议版本4（TCP/IPv4）
+
+
+6、选中“使用下面的IP地址（s）”
+
+7、IP地址栏中写只要不和飞机端的地面站重合的即可，如192.168.1.188，子网掩码点击后自己填充
+
+.. image:: ../../images/p600/首次飞行/电脑端IP配置.png
+
+然后打开地面站，连接方式如下面两张图所示
+
+打开地面站后：1、点击右上角图标 2、点击通讯连接 3、点击添加
+
+.. image:: ../../images/p600/首次飞行/添加连接.png
+   :height: 1100px
+   :width: 1000px
+   :scale: 50%
+   :alt: None
+   :align: center
+
+
+点击添加后：1、名称自定义 2、类型选择TCP 3、主机地址为192.168.1.***（最后三位看自己的飞控端地址） 4、端口是8080
+
+.. image:: ../../images/p600/首次飞行/编辑连接.png
+   :height: 1100px
+   :width: 1000px
+   :scale: 50%
+   :alt: None
+   :align: center
+
+
+然后点击“连接”，连接成功后如下图所示
+
+.. image:: ../../images/p450/first_fly/3-connectsuccess.png
+
+地面站连接成功后，记得检查GPS搜星数量（至少保证搜星数量在10颗以上，即GPS指示灯变为绿色），如下图所示（图示中搜星17颗）
+
+.. image:: ../../images/p600/首次飞行/卫星搜星数.png
+   :height: 800px
+   :width: 800px
+   :scale: 50%
+   :alt: None
+   :align: center
+
+查看无人机电池电量，此时显示的是23.52V，还可以飞行，降到22.0V时建议充电
+
+.. image:: ../../images/p600/首次飞行/查看电池电量.png
+   :height: 800px
+   :width: 800px
+   :scale: 50%
+   :alt: None
+   :align: center
+
+查看无人机的姿态球，下图1表示姿态球，2、表示无人机的高度，3表示航向角
+
+.. attention::
+
+    若姿态球中倾斜的程度过大，则需要重新校准水平仪
+
+.. image:: ../../images/p600/首次飞行/姿态球.png
+
+   :align: center
+
+校准水平仪的位置
+
+.. image:: ../../images/p600/首次飞行/校准水平仪的位置.png
+   :align: center
+
+查看控制模式，操作方式为控制遥控器SWC通道，分为上、中、下三通道，分别对应不同的模式
+
+.. attention::
+
+    新手的话建议使用position定点模式
+
+.. image:: ../../images/p600/首次飞行/模式.png
+  :align: center
+
+也可以查看下安全模式，主要是看低电量保护、地理围栏、以及返航高度（需根据周围环境进行设置），如下图：
+
+.. image:: ../../images/p600/首次飞行/安全模式.png
+
+确认切到定点模式后，内八解锁，然后缓慢往上推
+
+.. image:: ../../images/p600/首次飞行/定点飞行.png
+  :align: center
+
+然后缓慢拉低油门，降落下来后，外八上锁，开始测试任务规划，首先我们需要清除上次规划的航点，然后设置起飞点
+
+清除航点
+
+.. image:: ../../images/p600/首次飞行/清除航点.png
+
+设置起飞点
+
+.. image:: ../../images/p600/首次飞行/起飞点.png
+
+设置航点，途中标记3的位置为航点距飞机的距离
+
+.. image:: ../../images/p600/首次飞行/设置航点.png
+
+可以设置飞机飞航点的高度与距离，设置完成后点击右上角的上传
+
+.. image:: ../../images/p600/首次飞行/上传航点.png
+
+滑动解锁任务
+
+.. image:: ../../images/p600/首次飞行/解锁任务.png
+  :align: center
+
+确认为定点模式，gps信号正常后即可解锁飞航点
+
+.. attention::
+
+    若有异常，比如不按照航线去飞，则通过切到定高模式，再切回定点模式，会取消任务进行手动控制
+
+.. image:: ../../images/p600/首次飞行/执行航点.png
+
+飞完航点后，可进行一键返航，点飞行模式，然后选择return即可
+
+.. image:: ../../images/p600/首次飞行/一键返航.png
+  :align: center
+
+之后飞机会回到其实起飞的高度并自动降落
+
+.. image:: ../../images/p600/首次飞行/返航之后并降落.png
+  :align: center
+
+降落后外八字上锁
+
+.. image:: ../../images/p600/首次飞行/上锁.png
+  :align: center
+
+上锁后，长按电源键五秒给无人机断电，电机灯熄灭后证明断电成功，然后拔掉电池，关闭遥控器
+
+.. image:: ../../images/p600/首次飞行/断电.png
+  :align: center
+
+
+视频演示
+-------------------------
+
+.. raw:: html
+    <iframe width="696" height="422"  src="//player.bilibili.com/player.html?aid=418128941&bvid=BV17V411j7Em&cid=345269545&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+首次飞行地址：
+
+https://www.bilibili.com/video/BV17V411j7Em?t=365
+
+

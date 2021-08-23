@@ -1,0 +1,439 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>硬件介绍 &mdash; P系列无人机-wiki 1.0 文档</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="软件介绍" href="2-%E8%BD%AF%E4%BB%B6%E4%BB%8B%E7%BB%8D.html" />
+    <link rel="prev" title="5-进阶功能-FastPlanner" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-fastplanner.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> P系列无人机-wiki
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">首页</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.amovlab.com/">阿木实验室</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E.html">免责声明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E5%AE%89%E5%85%A8%E6%8C%87%E5%AF%BC%E6%89%8B%E5%86%8C.html">安全指导手册</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">P450使用手册</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../p450/1-%E7%A1%AC%E4%BB%B6%E4%BB%8B%E7%BB%8D.html">硬件介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/2-%E8%BD%AF%E4%BB%B6%E4%BB%8B%E7%BB%8D.html">软件介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/3-%E9%A6%96%E6%AC%A1%E9%A3%9E%E8%A1%8C.html">首次飞行</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/4-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86md.html">常见问题处理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%86%85%E6%8C%87%E7%82%B9%E9%A3%9E%E8%A1%8C.html">进阶功能-室内指点飞行</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%86%85%E8%87%AA%E4%B8%BB%E8%B7%9F%E8%B8%AA.html">进阶功能-室内自主跟踪</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%86%85%E8%87%AA%E4%B8%BB%E9%99%8D%E8%90%BD.html">进阶功能-室内自主降落</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%86%85%E8%87%AA%E4%B8%BB%E9%81%BF%E9%9A%9C.html">进阶功能-室内自主避障</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%A4%96%E6%8C%87%E7%82%B9%E9%A3%9E%E8%A1%8C.html">进阶功能-室外指点飞行</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%A4%96%E8%87%AA%E4%B8%BB%E9%99%8D%E8%90%BD.html">进阶功能-室外自主降落</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%A4%96%E8%87%AA%E4%B8%BB%E8%B7%9F%E8%B8%AA.html">进阶功能-室外自主跟踪</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%A4%96%E8%87%AA%E4%B8%BB%E9%81%BF%E9%9A%9C.html">进阶功能-室外自主避障</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-fastplanner.html">进阶功能-FastPlanner</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">P600使用手册</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">硬件介绍</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">硬件平台优势及特色</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">平台化设计</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">长续航</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">大载重</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">可扩展</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sdk">定制版控制SDK</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">参数指标</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id8">无人机</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">电池</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">遥控器</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11">板载计算机</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id12">激光雷达</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">图数传一体</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id14">光电吊舱</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id15">软件参数</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id16">发货清单</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id17">开箱讲解</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id18">1.检查产品外包装</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id19">2.打开产品外包装</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id20">3.清点产品数量</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id21">4.基本上电查看</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id22">5.开箱视频</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id23">硬件设备说明及用途</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#p600">P600硬件接线图</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id24">P600硬件设备简单介绍</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="2-%E8%BD%AF%E4%BB%B6%E4%BB%8B%E7%BB%8D.html">软件介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-%E9%A6%96%E6%AC%A1%E9%A3%9E%E8%A1%8C.html">首次飞行</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E5%AE%A4%E5%A4%96%E6%8C%87%E7%82%B9%E9%A3%9E%E8%A1%8C.html">进阶功能-室外指点</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E6%A1%86%E9%80%89%E8%B7%9F%E8%B8%AA%E9%A3%9E%E8%A1%8C.html">进阶功能-吊舱跟踪</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-%E8%A7%84%E5%88%92%E9%81%BF%E9%9A%9C%E9%A3%9E%E8%A1%8C.html">进阶功能-规划避障</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">仿真使用手册</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../simulation/1-%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83.html">仿真环境</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../simulation/2-%E9%A3%9E%E8%A1%8C%E6%8E%A7%E5%88%B6%E6%A8%A1%E5%9D%97.html">飞行控制模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../simulation/3-slam%E6%A8%A1%E5%9D%97.html">slam模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../simulation/4-%E8%A7%84%E5%88%92%E6%A8%A1%E5%9D%97.html">规划模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../simulation/5-%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E6%A8%A1%E5%9D%97.html">目标检测模块</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">PX4基础配置</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/1-%E8%BF%9E%E6%8E%A5%E9%A3%9E%E6%8E%A7.html">连接飞控</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/2-%E5%9B%BA%E4%BB%B6%E5%88%B7%E5%86%99.html">固件刷写</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/3-%E6%9C%BA%E6%9E%B6%E9%80%89%E6%8B%A9.html">机架选择</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/4-%E4%BC%A0%E6%84%9F%E5%99%A8%E6%A0%A1%E5%87%86.html">传感器校准</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/5-%E9%81%A5%E6%8E%A7%E5%99%A8%E6%A0%A1%E5%87%86.html">遥控器校准</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/7-%E7%94%B5%E6%B1%A0%E6%A0%A1%E5%87%86.html">电池校准</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/8-%E7%94%B5%E8%B0%83%E6%A0%A1%E5%87%86.html">电调校准</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/9-%E5%B8%B8%E7%94%A8%E5%8F%82%E6%95%B0%E8%AE%BE%E7%BD%AE.html">常用参数设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/10-PID%E8%B0%83%E5%8F%82.html">PID调参</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baseconfig_for_px4/11-%E4%BB%BB%E5%8A%A1%E9%A3%9E%E8%A1%8C.html">任务飞行</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">其他</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E5%BC%80%E5%8F%91%E5%9B%A2%E9%98%9F.html">Prometheus团队</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/Prometheus%E5%8E%86%E5%8F%B2.html">Prometheus历史</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/Prometheus%E5%90%88%E4%BD%9C%E4%BC%99%E4%BC%B4%E8%AE%A1%E5%88%92.html">Prometheus合作伙伴计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC.html">联系我们</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E7%A4%BE%E5%8C%BA%E8%AE%BA%E5%9D%9B.html">社区论坛</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/%E8%87%B4%E8%B0%A2.html">致谢</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">P系列无人机-wiki</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>硬件介绍</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/docs/p600/1-硬件介绍.rst.txt" rel="nofollow"> 查看页面源码</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>硬件介绍<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p><strong>简介：</strong> Prometheus600（简称P600）是一款中等大小的无人机开发平台，具有大载重、长续航、可扩展的特性。
+可搭载激光雷达、NX板载计算机、三轴光电吊舱（10倍光学变焦）、RTK等智能化设备。
+实现吊舱框选跟踪，激光雷达避障，无人机位置速度指点飞行。本开发平台基于Prometheus开源项目，提供丰富的demo例程，
+涵盖控制模块，slam模块，规划模块以及目标检测模块等多个无人机及机器视觉相关研究方向，为无人机科研开发助力，致力于让研发更加高效。</p>
+<p>最高配置为 P450+T265+D435I+S1+单目</p>
+<a class="reference internal image-reference" href="../../_images/P600配置图.jpg"><img alt="None" class="align-center" src="../../_images/P600配置图.jpg" style="width: 750.0px; height: 468.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/主视图.jpg"><img alt="None" class="align-center" src="../../_images/主视图.jpg" style="width: 675.0px; height: 421.2px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>无人机正视图</p>
+</div>
+<a class="reference internal image-reference" href="../../_images/左视图.jpg"><img alt="None" class="align-center" src="../../_images/左视图.jpg" style="width: 675.0px; height: 421.2px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>无人机左视图</p>
+</div>
+<div class="section" id="id2">
+<h2>硬件平台优势及特色<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id3">
+<h3>平台化设计<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
+<a class="reference internal image-reference" href="../../_images/平台化设计.jpg"><img alt="None" class="align-center" src="../../_images/平台化设计.jpg" style="width: 600.0px; height: 708.8000000000001px;" /></a>
+</div>
+<div class="section" id="id4">
+<h3>长续航<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<a class="reference internal image-reference" href="../../_images/长续航.jpg"><img alt="None" class="align-center" src="../../_images/长续航.jpg" style="width: 600.0px; height: 512.0px;" /></a>
+</div>
+<div class="section" id="id5">
+<h3>大载重<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
+<a class="reference internal image-reference" href="../../_images/大载重.jpg"><img alt="None" class="align-center" src="../../_images/大载重.jpg" style="width: 600.0px; height: 640.8000000000001px;" /></a>
+</div>
+<div class="section" id="id6">
+<h3>可扩展<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
+<a class="reference internal image-reference" href="../../_images/可扩展.jpg"><img alt="None" class="align-center" src="../../_images/可扩展.jpg" style="width: 600.0px; height: 480.8px;" /></a>
+</div>
+<div class="section" id="sdk">
+<h3>定制版控制SDK<a class="headerlink" href="#sdk" title="永久链接至标题">¶</a></h3>
+<a class="reference internal image-reference" href="../../_images/定制化控制SDK.jpg"><img alt="None" class="align-center" src="../../_images/定制化控制SDK.jpg" style="width: 637.5px; height: 447.09999999999997px;" /></a>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>参数指标<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id8">
+<h3>无人机<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h3>
+<a class="reference internal image-reference" href="../../_images/无人机.jpg"><img alt="None" class="align-center" src="../../_images/无人机.jpg" style="width: 637.5px; height: 481.95px;" /></a>
+</div>
+<div class="section" id="id9">
+<h3>电池<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h3>
+<a class="reference internal image-reference" href="../../_images/电池.jpg"><img alt="None" class="align-center" src="../../_images/电池.jpg" style="width: 637.5px; height: 323.84999999999997px;" /></a>
+</div>
+<div class="section" id="id10">
+<h3>遥控器<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h3>
+<a class="reference internal image-reference" href="../../_images/遥控器.jpg"><img alt="None" class="align-center" src="../../_images/遥控器.jpg" style="width: 637.5px; height: 87.55px;" /></a>
+</div>
+<div class="section" id="id11">
+<h3>板载计算机<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h3>
+<a class="reference internal image-reference" href="../../_images/板载计算机.jpg"><img alt="None" class="align-center" src="../../_images/板载计算机.jpg" style="width: 637.5px; height: 208.25px;" /></a>
+</div>
+<div class="section" id="id12">
+<h3>激光雷达<a class="headerlink" href="#id12" title="永久链接至标题">¶</a></h3>
+<a class="reference internal image-reference" href="../../_images/激光雷达.jpg"><img alt="None" class="align-center" src="../../_images/激光雷达.jpg" style="width: 637.5px; height: 239.7px;" /></a>
+</div>
+<div class="section" id="id13">
+<h3>图数传一体<a class="headerlink" href="#id13" title="永久链接至标题">¶</a></h3>
+<a class="reference internal image-reference" href="../../_images/Homer图数传.jpg"><img alt="None" class="align-center" src="../../_images/Homer图数传.jpg" style="width: 637.5px; height: 446.25px;" /></a>
+</div>
+<div class="section" id="id14">
+<h3>光电吊舱<a class="headerlink" href="#id14" title="永久链接至标题">¶</a></h3>
+<a class="reference internal image-reference" href="../../_images/光电吊舱.jpg"><img alt="None" class="align-center" src="../../_images/光电吊舱.jpg" style="width: 637.5px; height: 425.0px;" /></a>
+</div>
+<div class="section" id="id15">
+<h3>软件参数<a class="headerlink" href="#id15" title="永久链接至标题">¶</a></h3>
+<a class="reference internal image-reference" href="../../_images/软件参数.jpg"><img alt="None" class="align-center" src="../../_images/软件参数.jpg" style="width: 637.5px; height: 496.4px;" /></a>
+</div>
+<div class="section" id="id16">
+<h3>发货清单<a class="headerlink" href="#id16" title="永久链接至标题">¶</a></h3>
+<a class="reference internal image-reference" href="../../_images/发货清单.jpg"><img alt="None" class="align-center" src="../../_images/发货清单.jpg" style="width: 637.5px; height: 645.15px;" /></a>
+</div>
+</div>
+<div class="section" id="id17">
+<h2>开箱讲解<a class="headerlink" href="#id17" title="永久链接至标题">¶</a></h2>
+<p>接下来主要说明飞机到手之后的开箱讲解</p>
+<div class="section" id="id18">
+<h3>1.检查产品外包装<a class="headerlink" href="#id18" title="永久链接至标题">¶</a></h3>
+<a class="reference internal image-reference" href="../../_images/检查产品外包装.png"><img alt="None" class="align-center" src="../../_images/检查产品外包装.png" style="width: 448.40000000000003px; height: 276.0px;" /></a>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>首先先检查产品外包装有无明显的破损以及严重磕碰，如发现上述情况，请联系我们的售后客服进行相应的处理。</p>
+</div>
+</div>
+<div class="section" id="id19">
+<h3>2.打开产品外包装<a class="headerlink" href="#id19" title="永久链接至标题">¶</a></h3>
+<a class="reference internal image-reference" href="../../_images/打开产品外包装.png"><img alt="None" class="align-center" src="../../_images/打开产品外包装.png" style="width: 448.40000000000003px; height: 276.0px;" /></a>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>打开产品外包装，注意请将产品包装箱平放，印有logo标语朝上，然后打开上面箱盖，打开包装箱，我们可以看到黑色的泡沫，需要轻轻将各个产品配件从中取出。</p>
+</div>
+</div>
+<div class="section" id="id20">
+<h3>3.清点产品数量<a class="headerlink" href="#id20" title="永久链接至标题">¶</a></h3>
+<a class="reference internal image-reference" href="../../_images/清点产品数量.png"><img alt="None" class="align-center" src="../../_images/清点产品数量.png" style="width: 448.40000000000003px; height: 276.0px;" /></a>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>清点产品数量，首先请对照发货清单检查飞机和附件数量，然后检查飞机和随机附件外观是否有破损及异常.</p>
+</div>
+</div>
+<div class="section" id="id21">
+<h3>4.基本上电查看<a class="headerlink" href="#id21" title="永久链接至标题">¶</a></h3>
+<a class="reference internal image-reference" href="../../_images/基本上电查看.png"><img alt="None" class="align-center" src="../../_images/基本上电查看.png" style="width: 448.40000000000003px; height: 276.0px;" /></a>
+<div class="admonition important">
+<p class="admonition-title">重要</p>
+<p>注意查看其他清单内容</p>
+</div>
+</div>
+<div class="section" id="id22">
+<h3>5.开箱视频<a class="headerlink" href="#id22" title="永久链接至标题">¶</a></h3>
+<p>详细可以观看开箱视频：</p>
+<p>链接如下： <a class="reference external" href="https://v.qq.com/x/page/y3248yfm33h.html">https://v.qq.com/x/page/y3248yfm33h.html</a></p>
+<iframe width="696" height="422" src="https://v.qq.com/txp/iframe/player.html?vid=y3248yfm33h" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe></div>
+</div>
+<div class="section" id="id23">
+<h2>硬件设备说明及用途<a class="headerlink" href="#id23" title="永久链接至标题">¶</a></h2>
+<div class="section" id="p600">
+<h3>P600硬件接线图<a class="headerlink" href="#p600" title="永久链接至标题">¶</a></h3>
+<a class="reference internal image-reference" href="../../_images/P600线路图.jpg"><img alt="None" class="align-center" src="../../_images/P600线路图.jpg" style="width: 707.7px; height: 470.0px;" /></a>
+</div>
+<div class="section" id="id24">
+<h3>P600硬件设备简单介绍<a class="headerlink" href="#id24" title="永久链接至标题">¶</a></h3>
+<p>可观看硬件设备介绍视频：</p>
+<p>链接如下： <a class="reference external" href="https://v.qq.com/x/page/z32486xl8pv.html">https://v.qq.com/x/page/z32486xl8pv.html</a></p>
+<iframe width="696" height="422" src="https://v.qq.com/x/page/z32486xl8pv.html" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="2-%E8%BD%AF%E4%BB%B6%E4%BB%8B%E7%BB%8D.html" class="btn btn-neutral float-right" title="软件介绍" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../p450/5-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD-fastplanner.html" class="btn btn-neutral float-left" title="5-进阶功能-FastPlanner" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; 版权所有 2020, amov-dev.
+
+    </p>
+  </div>
+    
+    
+    
+    利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    
+    由 <a href="https://readthedocs.org">Read the Docs</a>开发. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
